@@ -1,0 +1,54 @@
+<title>Statement Extraction Swimlane</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: a narrow reading column for the header and notes; the diagram is a single tall sheet that owns its own horizontal scroll. */
+{{TOKENS_CSS}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:15px;line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding-block:36px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:24px}
+header{display:flex;flex-direction:column;gap:10px;max-width:68ch}
+h1{font-family:var(--font-display);font-weight:600;font-size:28px;line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-0.01em}
+h2{font-family:var(--font-display);font-weight:600;font-size:17px;margin:0}
+p{margin:0}
+.lede{color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;margin:0;padding:0;font-size:13.5px}
+.legend li{display:flex;align-items:center;gap:8px}
+.sw{width:22px;height:14px;border-radius:4px;border:1.5px solid;flex:none}
+.sw.b{background:var(--blue-fill);border-color:var(--blue-stroke)}
+.sw.a{background:var(--amber-fill);border-color:var(--amber-stroke)}
+.sw.g{background:var(--green-fill);border-color:var(--green-stroke)}
+.sw.n{width:16px;height:16px;border-radius:50%;background:var(--surface);border-color:var(--line)}
+figure{margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+.sheet{overflow-x:auto;border-radius:10px}
+.sheet svg{display:block;width:100%;min-width:940px;height:auto;font-family:var(--font-body)}
+figcaption{color:var(--muted);font-size:13.5px;max-width:75ch}
+.notes{display:flex;flex-direction:column;gap:8px;max-width:72ch}
+.notes ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+{{DIAGRAM_CSS}}
+</style>
+<div class="wrap">
+<header>
+  <h1>Statement extraction pipeline</h1>
+  <p class="lede">How one parser branch takes an annual report from source intake to a released or blocked evidence package. Up to four branches run this path independently, two text-based and two OCR-based, and the green stages record where their outputs differ.</p>
+  <ul class="legend">
+    <li><span class="sw b"></span>Deterministic processing or gate</li>
+    <li><span class="sw a"></span>Probabilistic LLM proposal</li>
+    <li><span class="sw g"></span>Deterministic immutable branch comparison</li>
+    <li><span class="sw n"></span>N1–N7 merge nodes</li>
+  </ul>
+</header>
+<figure>
+  <div class="sheet">
+{{SVG}}
+  </div>
+  <figcaption>The LLM is called in three places only (Stages 4, 6a, 6b). Each call is followed by a deterministic check that can send the exact failed checks back for up to three attempts, then either admits the result or records the branch as ineligible and continues.</figcaption>
+</figure>
+<section class="notes">
+  <h2>Where the drawing fills a gap in the description</h2>
+  <ul>
+    <li>Two boxes carry the label Stage 5 (validate hypothesis claims, then compare hypothesis sets) and two carry Stage 6a (select, then test). Both pairs are drawn as described.</li>
+    <li>Stage 7–8 and Stage 12 had no color stated. They are drawn blue because both are deterministic gates or policy.</li>
+    <li>Gates and the ineligible, release, and blocked outcome boxes are drawn blue, following “deterministic processing or gate”.</li>
+  </ul>
+</section>
+</div>
