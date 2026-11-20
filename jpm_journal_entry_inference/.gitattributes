@@ -1,0 +1,3 @@
+# Test filings and recordings are compared byte for byte: never convert line endings in them.
+*.pdf binary
+*.gz binary

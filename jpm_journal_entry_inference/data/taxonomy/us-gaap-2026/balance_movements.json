@@ -1,0 +1,4027 @@
+{
+ "meta": {
+  "notice": "(c) 2010-2026 Financial Accounting Foundation; (c) 2007-2010 XBRL US, Inc. All Rights Reserved. Notice: Authorized Uses are Set Forth at https://xbrl.fasb.org/terms/TaxonomiesTermsConditions.html Concept names, labels, definitions and references are reproduced unchanged from the US GAAP Financial Reporting Taxonomy. A copy of the Authorized Uses notice is in data/taxonomy/NOTICE.txt.",
+  "taxonomy": "US GAAP Financial Reporting Taxonomy 2026",
+  "source_url": "https://xbrl.fasb.org/us-gaap/2026/us-gaap-2026.zip",
+  "package_sha256": "f4c8b8b5697ba7d825a8614b159611cd25a46640e98a9737cda1e4a672bd4c81",
+  "pinned": true,
+  "generated_by": "scripts/extract_taxonomy_movements.py",
+  "checks": {
+   "rollforward_structures": 106,
+   "distinct_rollforward_ids": 104,
+   "with_balance_concept": 102,
+   "with_net_change_concept": 101,
+   "movement_lines": 813,
+   "movement_lines_with_calc_sign": 618,
+   "movement_lines_with_meta_model": 294,
+   "calc_sign_vs_meta_model_agree": 276,
+   "calc_sign_vs_meta_model_disagree": 4,
+   "balance_concepts_in_meta_model": 240,
+   "meta_model_arcs": {
+    "inflow": 1108,
+    "outflow": 946,
+    "accrual": 52,
+    "contra": 96
+   },
+   "concepts": 2868,
+   "concepts_unresolved": 35,
+   "concepts_with_asc_reference": 2550
+  }
+ },
+ "balance_movements": {
+  "srt:StandardizedMeasureOfDiscountedFutureNetCashFlowsRelatingToProvedOilAndGasReserves": {
+   "inflow": [
+    "srt:StandardizedMeasureOfDiscountedFutureNetCashFlowOfProvedOilAndGasReservesPeriodIncreaseDecrease",
+    "srt:IncreaseDueToPurchasesOfMineralsInPlace",
+    "srt:ExtensionsDiscoveriesAdditionsAndImprovedRecoveryLessRelatedCosts"
+   ],
+   "outflow": [
+    "srt:DecreaseDueToSalesOfMineralsInPlace",
+    "srt:SalesAndTransfersOfOilAndGasProducedNetOfProductionCosts"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:AccountsReceivableExcludingAccruedInterestBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AccountsReceivableAllowanceForCreditLossExcludingAccruedInterestNoncurrent"
+   ]
+  },
+  "us-gaap:AccountsReceivableGross": {
+   "inflow": [
+    "us-gaap:AccountsReceivablePurchase"
+   ],
+   "outflow": [
+    "us-gaap:AccountsReceivableSale"
+   ],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AllowanceForDoubtfulAccountsPremiumsAndOtherReceivables",
+    "us-gaap:AllowanceForDoubtfulAccountsReceivable"
+   ]
+  },
+  "us-gaap:AccountsReceivableGrossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AllowanceForDoubtfulAccountsReceivableCurrent"
+   ]
+  },
+  "us-gaap:AccountsReceivableGrossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AllowanceForDoubtfulAccountsReceivableNoncurrent"
+   ]
+  },
+  "us-gaap:AccrualForEnvironmentalLossContingencies": {
+   "inflow": [
+    "us-gaap:AccrualForEnvironmentalLossContingenciesIncreaseDecreaseForAcquisitionsAndDivestitures",
+    "us-gaap:AccrualForEnvironmentalLossContingenciesPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:AccrualForEnvironmentalLossContingenciesChargesToExpenseForNewLosses",
+    "us-gaap:AccrualForEnvironmentalLossContingenciesIncreaseDecreaseForRevisionInEstimates",
+    "us-gaap:AccrualForEnvironmentalLossContingenciesForeignCurrencyTranslationGainLoss"
+   ],
+   "contra": [
+    "us-gaap:AccrualForEnvironmentalLossContingenciesDiscount"
+   ]
+  },
+  "us-gaap:AccumulatedAmortizationOfNoncurrentDeferredFinanceCosts": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:AmortizationOfFinancingCostsAndDiscounts",
+    "us-gaap:AmortizationOfFinancingCosts"
+   ],
+   "contra": []
+  },
+  "us-gaap:AccumulatedCapitalizedInterestCosts": {
+   "inflow": [
+    "us-gaap:InterestCostsCapitalized",
+    "us-gaap:InterestCostsIncurredCapitalized"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment": {
+   "inflow": [
+    "us-gaap:AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipmentPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:AccumulatedDepreciationDepletionAndAmortizationSaleOfPropertyPlantAndEquipment1"
+   ],
+   "accrual": [
+    "us-gaap:DepreciationDepletionAndAmortization",
+    "us-gaap:OtherDepreciationAndAmortization",
+    "us-gaap:Depletion",
+    "us-gaap:CostDepletion",
+    "us-gaap:AmortizationAndDepreciationOfDecontaminatingAndDecommissioningAssets",
+    "us-gaap:CostOfGoodsAndServicesSoldAmortization",
+    "us-gaap:DepreciationNonproduction",
+    "us-gaap:CostOfGoodsAndServicesSoldDepreciation",
+    "us-gaap:Depreciation"
+   ],
+   "contra": []
+  },
+  "us-gaap:AccumulatedOtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTax": {
+   "inflow": [
+    "us-gaap:DebtSecuritiesAvailableForSaleUnrealizedGainLoss"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNetOfTax": {
+   "inflow": [
+    "us-gaap:OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationGainLossBeforeReclassificationAndTax",
+    "us-gaap:CumulativeTranslationAdjustmentNetOfTaxPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:OtherComprehensiveIncomeForeignCurrencyTranslationGainLossArisingDuringPeriodTax",
+    "us-gaap:OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationReclassificationAdjustmentFromAOCIRealizedUponSaleOrLiquidationNetOfTax"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax": {
+   "inflow": [
+    "us-gaap:AociCashFlowHedgeReferenceRateReformIncreaseDecreaseAfterTax",
+    "us-gaap:OtherComprehensiveIncomeAvailableforsaleSecuritiesAdjustmentBeforeTaxPortionAttributableToParent"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:AcquisitionCosts": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:AmortizationOfAcquisitionCosts"
+   ],
+   "contra": []
+  },
+  "us-gaap:AdditionalLiabilityLongDurationInsuranceOriginalDiscountRateBeforeReinsuranceAfterCashFlowChange": {
+   "inflow": [
+    "us-gaap:AdditionalLiabilityLongDurationInsurancePeriodIncreaseDecrease",
+    "us-gaap:AdditionalLiabilityLongDurationInsuranceIssuance"
+   ],
+   "outflow": [
+    "us-gaap:AdditionalLiabilityLongDurationInsuranceDerecognition"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:AdditionalPaidInCapital": {
+   "inflow": [
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalConvertibleDebtWithConversionFeature",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalEquityComponentOfConvertibleDebt",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalMarkToMarket",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalOther",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationAndExerciseOfStockOptions",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalShareBasedCompensationEmployeeStockPurchaseProgramRequisiteServicePeriodRecognition",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationOtherLongtermIncentivePlansRequisiteServicePeriodRecognition",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalSharebasedCompensationRequisiteServicePeriodRecognitionValue",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalShareBasedCompensationRestrictedStockUnitsRequisiteServicePeriodRecognition",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalShareBasedCompensationStockOptionsRequisiteServicePeriodRecognition",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalStockIssuedOwnshareLendingArrangementIssuanceCosts",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalWarrantIssued",
+    "us-gaap:AdjustmentToAdditionalPaidInCapitalConvertibleDebtInstrumentIssuedAtSubstantialPremium",
+    "us-gaap:InvestmentCompanyTaxReclassificationIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:InvestmentCompanyTaxReturnOfCapitalDistribution",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalDividendsInExcessOfRetainedEarnings",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalEquityComponentOfConvertibleDebtSubsequentAdjustments",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalIncreaseInCarryingAmountOfRedeemablePreferredStock",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalStockIssuedIssuanceCosts",
+    "us-gaap:AdjustmentsToAdditionalPaidInCapitalStockSplit"
+   ],
+   "accrual": [
+    "us-gaap:EmployeeBenefitsAndShareBasedCompensationNoncash",
+    "us-gaap:ShareBasedCompensation",
+    "us-gaap:StockOptionPlanExpense",
+    "us-gaap:RestrictedStockExpense"
+   ],
+   "contra": []
+  },
+  "us-gaap:AdvanceRoyalties": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:AmortizationOfAdvanceRoyalty"
+   ],
+   "contra": []
+  },
+  "us-gaap:AffordableHousingProgramObligation": {
+   "inflow": [
+    "us-gaap:AffordableHousingProgramObligationPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:AllowanceForDoubtfulAccountsPremiumsAndOtherReceivables": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:ProvisionForDoubtfulAccounts"
+   ],
+   "contra": []
+  },
+  "us-gaap:AllowanceForDoubtfulAccountsReceivable": {
+   "inflow": [
+    "us-gaap:AllowanceForDoubtfulAccountsReceivableRecoveries",
+    "us-gaap:AllowanceForDoubtfulAccountsReceivablePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:AllowanceForDoubtfulAccountsReceivableWriteOffs"
+   ],
+   "accrual": [
+    "us-gaap:ProvisionForDoubtfulAccounts"
+   ],
+   "contra": []
+  },
+  "us-gaap:AociTaxAttributableToParent": {
+   "inflow": [
+    "us-gaap:OtherComprehensiveIncomeAvailableforsaleSecuritiesTaxPortionAttributableToParent",
+    "us-gaap:OtherComprehensiveIncomeLossDerivativeExcludedComponentIncreaseDecreaseAfterAdjustmentsTaxParent",
+    "us-gaap:OtherComprehensiveIncomeLossFinancialLiabilityFairValueOptionAfterReclassificationAdjustmentTaxAttributableToParent",
+    "us-gaap:OtherComprehensiveIncomeForeignCurrencyTranslationAdjustmentTaxPortionAttributableToParent",
+    "us-gaap:OtherComprehensiveIncomeLossTaxPortionAttributableToParent1"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:AssetRetirementObligation": {
+   "inflow": [
+    "us-gaap:AssetRetirementObligationLiabilitiesIncurred",
+    "us-gaap:AssetRetirementObligationRevisionOfEstimate",
+    "us-gaap:AssetRetirementObligationPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:AssetRetirementObligationLiabilitiesSettled"
+   ],
+   "accrual": [
+    "us-gaap:AssetRetirementObligationAccretionExpense"
+   ],
+   "contra": []
+  },
+  "us-gaap:AssetsFairValueDisclosure": {
+   "inflow": [
+    "us-gaap:AssetsFairValueAdjustment"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:AvailableForSaleDebtSecuritiesAmortizedCostBasis": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLoss"
+   ]
+  },
+  "us-gaap:AvailableForSaleSecuritiesDebtSecurities": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:DebtSecuritiesAvailableForSaleUnrealizedGainLoss"
+   ],
+   "contra": []
+  },
+  "us-gaap:BelowMarketLeaseGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:BelowMarketLeaseAccumulatedAmortization"
+   ]
+  },
+  "us-gaap:BelowMarketLeaseNet": {
+   "inflow": [
+    "us-gaap:BelowMarketLeaseAcquired",
+    "us-gaap:BelowMarketLeasePeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:CapitalizedComputerSoftwareGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:CapitalizedComputerSoftwareAccumulatedAmortization"
+   ]
+  },
+  "us-gaap:CapitalizedComputerSoftwareNet": {
+   "inflow": [
+    "us-gaap:CapitalizedComputerSoftwareAdditions",
+    "us-gaap:CapitalizedComputerSoftwarePeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:CapitalizedContractCostGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:CapitalizedContractCostAccumulatedAmortization",
+    "us-gaap:CapitalizedContractCostAccumulatedImpairment"
+   ]
+  },
+  "us-gaap:CapitalizedCostsAccumulatedDepreciationDepletionAmortizationAndValuationAllowanceForRelatingToOilAndGasProducingActivities": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:DepletionOfOilAndGasProperties"
+   ],
+   "contra": []
+  },
+  "us-gaap:CapitalizedCostsOfUnprovedPropertiesExcludedFromAmortizationCumulative": {
+   "inflow": [
+    "us-gaap:CapitalizedCostsOfUnprovedPropertiesExcludedFromAmortization"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:CapitalizedExploratoryWellCosts": {
+   "inflow": [
+    "us-gaap:CapitalizedExploratoryWellCostAdditionsPendingDeterminationOfProvedReserves",
+    "us-gaap:CapitalizedExploratoryWellCostPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ReclassificationToWellFacilitiesAndEquipmentBasedOnDeterminationOfProvedReserves"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:Cash": {
+   "inflow": [
+    "us-gaap:ProceedsFromSecuritiesPurchasedUnderAgreementsToResell",
+    "us-gaap:ProceedsFromSaleOfProductiveAssets",
+    "us-gaap:ProceedsFromSaleOfPropertyPlantAndEquipment",
+    "us-gaap:ProceedsFromSaleOfPropertyHeldForSale",
+    "us-gaap:ProceedsFromSaleOfLandHeldForUse",
+    "us-gaap:ProceedsFromSaleOfBuildings",
+    "us-gaap:ProceedsFromSaleOfMachineryAndEquipment",
+    "us-gaap:ProceedsFromSaleOfFurnitureAndFixtures",
+    "us-gaap:ProceedsFromSaleOfOilAndGasPropertyAndEquipment",
+    "us-gaap:ProceedsFromSaleOfWaterSystems",
+    "us-gaap:ProceedsFromSaleOfOtherPropertyPlantAndEquipment",
+    "us-gaap:ProceedsFromDepositsOnRealEstateSales",
+    "us-gaap:ProceedsFromDelayedTaxExemptExchange",
+    "us-gaap:ProceedsFromSaleOfIntangibleAssets",
+    "us-gaap:ProceedsFromSaleOfOtherProductiveAssets",
+    "us-gaap:ProceedsFromSaleOfMortgageServicingRightsMSR",
+    "us-gaap:ProceedsFromSaleMaturityAndCollectionsOfInvestments",
+    "us-gaap:ProceedsFromLimitedPartnershipInvestments",
+    "us-gaap:ProceedsFromSaleAndMaturityOfMarketableSecurities",
+    "us-gaap:ProceedsFromSaleAndMaturityOfAvailableForSaleSecurities",
+    "us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+    "us-gaap:ProceedsFromSaleOfMortgageBackedSecuritiesMBSCategorizedAsAvailableForSale",
+    "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+    "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfMortgageBackedSecuritiesMBS",
+    "us-gaap:ProceedsFromCollectionOfRetainedInterestInSecuritizedReceivablesCategorizedAsAvailableForSale",
+    "us-gaap:ProceedsFromSaleAndMaturityOfHeldToMaturitySecurities",
+    "us-gaap:ProceedsFromSaleOfHeldToMaturitySecurities",
+    "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfHeldToMaturitySecurities",
+    "us-gaap:ProceedsFromCollectionOfRetainedInterestInSecuritizedReceivablesCategorizedAsHeldToMaturity",
+    "us-gaap:ProceedsFromSaleAndCollectionOfReceivables",
+    "us-gaap:ProceedsFromSaleAndCollectionOfNotesReceivable",
+    "us-gaap:ProceedsFromSaleOfNotesReceivable",
+    "us-gaap:ProceedsFromCollectionOfNotesReceivable",
+    "us-gaap:ProceedsFromSaleAndCollectionOfLeaseReceivables",
+    "us-gaap:ProceedsFromSaleOfLeaseReceivables",
+    "us-gaap:ProceedsFromCollectionOfLeaseReceivables",
+    "us-gaap:ProceedsFromSaleAndCollectionOfLoansReceivable",
+    "us-gaap:ProceedsFromDivestitureOfBusinessesAndInterestsInAffiliates",
+    "us-gaap:ProceedsFromDivestitureOfBusinessesNetOfCashDivested",
+    "us-gaap:ProceedsFromDivestitureOfBusinesses",
+    "us-gaap:ProceedsFromDivestitureOfInterestInSubsidiariesAndAffiliates",
+    "us-gaap:ProceedsFromDivestitureOfInterestInConsolidatedSubsidiaries",
+    "us-gaap:ProceedsFromSaleOfEquityMethodInvestments",
+    "us-gaap:ProceedsFromDivestitureOfInterestInJointVenture",
+    "us-gaap:ProceedsFromSaleOfLoansReceivable",
+    "us-gaap:ProceedsFromCollectionOfPolicyLoans",
+    "us-gaap:ProceedsFromCollectionOfLoansReceivable",
+    "us-gaap:ProceedsFromSaleAndCollectionOfMortgageNotesReceivable",
+    "us-gaap:ProceedsFromSaleAndCollectionOfFinanceReceivables",
+    "us-gaap:ProceedsFromSaleOfFinanceReceivables",
+    "us-gaap:ProceedsFromCollectionOfFinanceReceivables",
+    "us-gaap:ProceedsFromCollectionOfRetainedInterestInSecuritizedReceivables",
+    "us-gaap:ProceedsFromCollectionOfAdvanceToAffiliate",
+    "us-gaap:ProceedsFromFederalHomeLoanBankAdvances",
+    "us-gaap:ProceedsFromSaleAndCollectionOfOtherReceivables",
+    "us-gaap:ProceedsFromSaleOfOtherReceivables",
+    "us-gaap:ProceedsFromCollectionOfOtherReceivables",
+    "us-gaap:ProceedsFromSaleOfFederalReserveStock",
+    "us-gaap:ProceedsFromSaleOfEquitySecuritiesFvNi",
+    "us-gaap:ProceedsFromSaleOfOtherRealEstate",
+    "us-gaap:ProceedsFromSaleOfRestrictedInvestments",
+    "us-gaap:ProceedsFromSaleOfInsuranceInvestments",
+    "us-gaap:ProceedsFromSaleOfRealEstateHeldforinvestment",
+    "us-gaap:ProceedsFromSaleOfLandHeldforinvestment",
+    "us-gaap:ProceedsFromSaleOfOtherRealEstateHeldforinvestment",
+    "us-gaap:ProceedsFromSaleOfInvestmentProjects",
+    "us-gaap:ProceedsFromDecommissioningFund",
+    "us-gaap:ProceedsFromSaleAndMaturityOfOtherInvestments",
+    "us-gaap:ProceedsFromSaleOfOtherInvestments",
+    "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfOtherInvestments",
+    "us-gaap:ProceedsFromDivestitureOfRealEstatePartnership",
+    "us-gaap:ProceedsFromDistributionsReceivedFromRealEstatePartnerships",
+    "us-gaap:ProceedsFromSaleOfFederalHomeLoanBankStock",
+    "us-gaap:ProceedsFromLoanAndLeaseOriginationsAndPrincipalCollections1",
+    "us-gaap:ProceedsFromLoanOriginations1",
+    "us-gaap:ProceedsFromPrincipalRepaymentsOnLoansAndLeasesHeldForInvestment",
+    "us-gaap:ProceedsFromSaleOfLoansAndLeasesHeldForInvestment",
+    "us-gaap:ProceedsFromSaleOfLoansHeldForInvestment",
+    "us-gaap:ProceedsFromSecuritizationsOfLoansHeldForInvestment",
+    "us-gaap:ProceedsFromSecuritizationsOfConsumerLoans",
+    "us-gaap:ProceedsFromSecuritizationsOfCreditCards",
+    "us-gaap:ProceedsFromLeasesHeldForInvestment",
+    "us-gaap:ProceedsOfOtherLoansAndLeasesHeldForInvestment",
+    "us-gaap:ProceedsFromRecoveriesOfLoanPreviouslyChargedOff",
+    "us-gaap:ProceedsFromLifeInsurancePolicies",
+    "us-gaap:ProceedsFromRemovalCosts",
+    "us-gaap:ProceedsFromNuclearFuel",
+    "us-gaap:ProceedsFromCollectionOfLongtermLoansToRelatedParties",
+    "us-gaap:ProceedsFromHedgeInvestingActivities",
+    "us-gaap:ProceedsFromDerivativeInstrumentInvestingActivities",
+    "us-gaap:ProceedsFromEquityMethodInvestmentDividendsOrDistributionsReturnOfCapital",
+    "us-gaap:ProceedsFromSaleOfForeclosedAssets",
+    "us-gaap:ProceedsFromSaleOfWhollyOwnedRealEstateAndRealEstateAcquiredInSettlementOfLoans",
+    "us-gaap:ProceedsFromLeasePaymentSalesTypeAndDirectFinancingLeasesInvestingActivity",
+    "us-gaap:ProceedsFromDistributionOfRestrictedCashFromPollutionControlBond",
+    "us-gaap:ProceedsFromAdvancesForConstruction",
+    "us-gaap:ProceedsFromContributionInAidOfConstruction",
+    "us-gaap:ProceedsFromInsuranceSettlementInvestingActivities",
+    "us-gaap:ProceedsFromPreviousAcquisition",
+    "us-gaap:CashAcquiredFromAcquisition",
+    "us-gaap:DefinedBenefitPlanBenefitObligationContributionsByPlanParticipant",
+    "us-gaap:LossContingencyReceivableProceeds",
+    "us-gaap:FinancialGuaranteeInsuranceContractsPremiumReceivableProceedsFromPremiumsReceived",
+    "us-gaap:SeparateAccountLiabilityPremium",
+    "us-gaap:SeparateAccountLiabilityDeposit",
+    "us-gaap:SeparateAccountLiabilityPremiumAndDeposit",
+    "us-gaap:PolicyholderAccountBalancePremiumReceived",
+    "us-gaap:ProceedsFromRentsReceived",
+    "us-gaap:ProceedsFromCollaborators",
+    "us-gaap:ProceedsFromDepositsFromCustomers",
+    "us-gaap:ProceedsFromOtherOperatingActivities",
+    "us-gaap:ProceedsFromLegalSettlements",
+    "us-gaap:ProceedsFromIncomeTaxRefunds",
+    "us-gaap:ProceedsFromInterestAndDividendsReceived",
+    "us-gaap:ProceedsFromSaleOfSecuritiesOperatingActivities",
+    "us-gaap:ProceedsFromDepositsWithOtherInstitutions",
+    "us-gaap:ProceedsFromGrantors",
+    "us-gaap:ProceedsFromLeasePayments",
+    "us-gaap:ProceedsFromSaleOfOtherAssets1",
+    "us-gaap:ProceedsFromRoyaltiesReceived",
+    "us-gaap:ProceedsFromCustomersForProgressPayments",
+    "us-gaap:ProceedsFromSaleOfRealEstate",
+    "us-gaap:ProceedsFromCollectionOfMortgageLoansHeldForSale",
+    "us-gaap:ProceedsFromDividendsReceived",
+    "us-gaap:ProceedsFromInsuranceSettlementOperatingActivities",
+    "us-gaap:ProceedsFromLicenseFeesReceived",
+    "us-gaap:ProceedsFromLoans",
+    "us-gaap:ProceedsFromSaleOfTrustAssetsToPayExpenses",
+    "us-gaap:ProceedsFromCommissionsReceived",
+    "us-gaap:ProceedsFromCustomers",
+    "us-gaap:ProceedsFromFeesReceived",
+    "us-gaap:ProceedsFromInterestReceived",
+    "us-gaap:ProceedsFromRefundsFromSuppliersOfMaterial",
+    "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfSecuritiesOperatingActivities",
+    "us-gaap:ProceedsFromSaleOfMortgageLoansHeldForSale",
+    "us-gaap:ProceedsFromInsurancePremiumsCollected",
+    "us-gaap:ProceedsFromTimeDepositsAccepted",
+    "us-gaap:NetCashProvidedByUsedInDiscontinuedOperations",
+    "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+    "us-gaap:NetCashProvidedByUsedInFinancingActivitiesContinuingOperations",
+    "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+    "us-gaap:NetCashProvidedByUsedInInvestingActivitiesContinuingOperations",
+    "us-gaap:ProceedsAccountsReceivablePreviouslyWrittenOffRecovery",
+    "us-gaap:ProceedsContractWithCustomerAssetPreviouslyWrittenOffRecovery",
+    "us-gaap:ProceedsDebtSecuritiesAvailableForSalePreviouslyWrittenOffRecovery",
+    "us-gaap:ProceedsDebtSecuritiesHeldToMaturityPreviouslyWrittenOffRecovery",
+    "us-gaap:ProceedsDirectFinancingLeaseNetInvestmentInLeasePreviouslyWrittenOffRecovery",
+    "us-gaap:ProceedsFromAccountsReceivableSecuritization",
+    "us-gaap:ProceedsFromAdvanceForAndContributionInAidOfConstructionFinancingActivity",
+    "us-gaap:ProceedsFromAnnuitiesAndInvestmentCertificates",
+    "us-gaap:ProceedsFromBankDebt",
+    "us-gaap:ProceedsFromBondsTransferredFromOtherOtherFederalHomeLoanBanks",
+    "us-gaap:ProceedsFromCollectionOfLoansHeldForSale",
+    "us-gaap:ProceedsFromCollectionOfOtherLoansHeldForSale",
+    "us-gaap:ProceedsFromConstructionLoansPayable",
+    "us-gaap:ProceedsFromContributedCapital",
+    "us-gaap:ProceedsFromContributionsFromAffiliates",
+    "us-gaap:ProceedsFromContributionsFromParent",
+    "us-gaap:ProceedsFromConvertibleDebt",
+    "us-gaap:ProceedsFromDebtMaturingInMoreThanThreeMonths",
+    "us-gaap:ProceedsFromDebtNetOfIssuanceCosts",
+    "us-gaap:ProceedsFromDepositsAppliedToDebtRetirements",
+    "us-gaap:ProceedsFromDerivativeInstrumentFinancingActivities",
+    "us-gaap:ProceedsFromDisposalCryptoAsset",
+    "us-gaap:ProceedsFromFederalHomeLoanBankBorrowings",
+    "us-gaap:ProceedsFromHedgeFinancingActivities",
+    "us-gaap:ProceedsFromIncomeTaxRefundFederal",
+    "us-gaap:ProceedsFromIncomeTaxRefundForeign",
+    "us-gaap:ProceedsFromIncomeTaxRefundStateAndLocal",
+    "us-gaap:ProceedsFromIssuanceInitialPublicOffering",
+    "us-gaap:ProceedsFromIssuanceOfCommercialPaper",
+    "us-gaap:ProceedsFromIssuanceOfCommonLimitedPartnersUnits",
+    "us-gaap:ProceedsFromIssuanceOfCommonStock",
+    "us-gaap:ProceedsFromIssuanceOfCommonStockDividendReinvestmentPlan",
+    "us-gaap:ProceedsFromIssuanceOfConvertiblePreferredStock",
+    "us-gaap:ProceedsFromIssuanceOfDebt",
+    "us-gaap:ProceedsFromIssuanceOfFinancialServicesObligations",
+    "us-gaap:ProceedsFromIssuanceOfFirstMortgageBond",
+    "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
+    "us-gaap:ProceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet",
+    "us-gaap:ProceedsFromIssuanceOfMandatoryRedeemableCapitalSecurities",
+    "us-gaap:ProceedsFromIssuanceOfMediumTermNotes",
+    "us-gaap:ProceedsFromIssuanceOfOtherLongTermDebt",
+    "us-gaap:ProceedsFromIssuanceOfPreferredLimitedPartnersUnits",
+    "us-gaap:ProceedsFromIssuanceOfPreferredStockAndPreferenceStock",
+    "us-gaap:ProceedsFromIssuanceOfPreferredStockPreferenceStockAndWarrants",
+    "us-gaap:ProceedsFromIssuanceOfPrivatePlacement",
+    "us-gaap:ProceedsFromIssuanceOfRedeemableConvertiblePreferredStock",
+    "us-gaap:ProceedsFromIssuanceOfRedeemablePreferredStock",
+    "us-gaap:ProceedsFromIssuanceOfSecuredDebt",
+    "us-gaap:ProceedsFromIssuanceOfSecuredTaxExemptDebt",
+    "us-gaap:ProceedsFromIssuanceOfSeniorLongTermDebt",
+    "us-gaap:ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlans",
+    "us-gaap:ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlansIncludingStockOptions",
+    "us-gaap:ProceedsFromIssuanceOfSubordinatedLongTermDebt",
+    "us-gaap:ProceedsFromIssuanceOfTrustPreferredSecurities",
+    "us-gaap:ProceedsFromIssuanceOfUnsecuredDebt",
+    "us-gaap:ProceedsFromIssuanceOfUnsecuredTaxExemptDebt",
+    "us-gaap:ProceedsFromIssuanceOfWarrants",
+    "us-gaap:ProceedsFromIssuanceOrSaleOfEquity",
+    "us-gaap:ProceedsFromLinesOfCredit",
+    "us-gaap:ProceedsFromLongTermLinesOfCredit",
+    "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfLongtermInvestments",
+    "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfShorttermInvestments",
+    "us-gaap:ProceedsFromMaturitiesRepaymentsAndCallsOfTradingSecuritiesHeldforinvestment",
+    "us-gaap:ProceedsFromMinorityShareholders",
+    "us-gaap:ProceedsFromMortgageDeposits",
+    "us-gaap:ProceedsFromNotesPayable",
+    "us-gaap:ProceedsFromOtherDebt",
+    "us-gaap:ProceedsFromOtherDeposits",
+    "us-gaap:ProceedsFromOtherEquity",
+    "us-gaap:ProceedsFromOtherShortTermDebt",
+    "us-gaap:ProceedsFromPartnershipContribution",
+    "us-gaap:ProceedsFromPaymentsForDepositsAppliedToDebtRetirements",
+    "us-gaap:ProceedsFromPaymentsForFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResellNet",
+    "us-gaap:ProceedsFromPaymentsForInInterestBearingDepositsInBanks",
+    "us-gaap:ProceedsFromPaymentsForInSecuritiesSoldUnderAgreementsToRepurchase",
+    "us-gaap:ProceedsFromPaymentsForLongTermLoansForRelatedParties",
+    "us-gaap:ProceedsFromPaymentsForOtherFinancingActivities",
+    "us-gaap:ProceedsFromPaymentsForSecuritiesPurchasedUnderAgreementsToResell",
+    "us-gaap:ProceedsFromPaymentsForTradingSecurities",
+    "us-gaap:ProceedsFromPaymentsToMinorityShareholders",
+    "us-gaap:ProceedsFromPollutionControlBond",
+    "us-gaap:ProceedsFromRealEstateAndRealEstateJointVentures",
+    "us-gaap:ProceedsFromRelatedPartyDebt",
+    "us-gaap:ProceedsFromRepaymentOfLoansByEmployeeStockOwnershipPlans",
+    "us-gaap:ProceedsFromRepaymentOfLoansToPurchaseCommonStock",
+    "us-gaap:ProceedsFromRepaymentsOfAccountsReceivableSecuritization",
+    "us-gaap:ProceedsFromRepaymentsOfBankOverdrafts",
+    "us-gaap:ProceedsFromRepaymentsOfCommercialPaper",
+    "us-gaap:ProceedsFromRepaymentsOfDebt",
+    "us-gaap:ProceedsFromRepaymentsOfDebtMaturingInMoreThanThreeMonths",
+    "us-gaap:ProceedsFromRepaymentsOfFirstMortgageBond",
+    "us-gaap:ProceedsFromRepaymentsOfLinesOfCredit",
+    "us-gaap:ProceedsFromRepaymentsOfLongTermDebtAndCapitalSecurities",
+    "us-gaap:ProceedsFromRepaymentsOfNotesPayable",
+    "us-gaap:ProceedsFromRepaymentsOfOtherDebt",
+    "us-gaap:ProceedsFromRepaymentsOfOtherLongTermDebt",
+    "us-gaap:ProceedsFromRepaymentsOfPollutionControlBond",
+    "us-gaap:ProceedsFromRepaymentsOfRelatedPartyDebt",
+    "us-gaap:ProceedsFromRepaymentsOfSecuredDebt",
+    "us-gaap:ProceedsFromRepaymentsOfShortTermDebt",
+    "us-gaap:ProceedsFromRepaymentsOfShortTermDebtMaturingInMoreThanThreeMonths",
+    "us-gaap:ProceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess",
+    "us-gaap:ProceedsFromRepurchaseOfEquity",
+    "us-gaap:ProceedsFromRepurchaseOfRedeemablePreferredStock",
+    "us-gaap:ProceedsFromRepurchaseOfTrustPreferredSecurities",
+    "us-gaap:ProceedsFromSaleAndCollectionOfLoansHeldforsale",
+    "us-gaap:ProceedsFromSaleAndMaturityOfTradingSecuritiesHeldforinvestment",
+    "us-gaap:ProceedsFromSaleMaturityAndCollectionOfLongtermInvestments",
+    "us-gaap:ProceedsFromSaleMaturityAndCollectionOfShorttermInvestments",
+    "us-gaap:ProceedsFromSaleOfFlightEquipment",
+    "us-gaap:ProceedsFromSaleOfInterestInCorporateUnit",
+    "us-gaap:ProceedsFromSaleOfInterestInPartnershipUnit",
+    "us-gaap:ProceedsFromSaleOfLoansHeldForSale",
+    "us-gaap:ProceedsFromSaleOfLongtermInvestments",
+    "us-gaap:ProceedsFromSaleOfOtherAssetsInvestingActivities",
+    "us-gaap:ProceedsFromSaleOfOtherLoansHeldForSale",
+    "us-gaap:ProceedsFromSaleOfShortTermInvestments",
+    "us-gaap:ProceedsFromSaleOfTradingSecuritiesHeldforinvestment",
+    "us-gaap:ProceedsFromSaleOfTreasuryStock",
+    "us-gaap:ProceedsFromSalesOfAssetsInvestingActivities",
+    "us-gaap:ProceedsFromSalesOfBusinessAffiliateAndProductiveAssets",
+    "us-gaap:ProceedsFromSecuredLinesOfCredit",
+    "us-gaap:ProceedsFromSecuredNotesPayable",
+    "us-gaap:ProceedsFromSecuritizationsOfLoansHeldForSale",
+    "us-gaap:ProceedsFromShortTermDebt",
+    "us-gaap:ProceedsFromShortTermDebtMaturingInMoreThanThreeMonths",
+    "us-gaap:ProceedsFromShortTermDebtMaturingInThreeMonthsOrLess",
+    "us-gaap:ProceedsFromStockOptionsExercised",
+    "us-gaap:ProceedsFromStockPlans",
+    "us-gaap:ProceedsFromSubordinatedShortTermDebt",
+    "us-gaap:ProceedsFromUnsecuredLinesOfCredit",
+    "us-gaap:ProceedsFromUnsecuredNotesPayable",
+    "us-gaap:ProceedsFromWarrantExercises",
+    "us-gaap:ProceedsNetInvestmentInLeasePreviouslyWrittenOffRecovery",
+    "us-gaap:ProceedsSalesTypeLeaseNetInvestmentInLeasePreviouslyWrittenOffRecovery",
+    "us-gaap:AdditionsToContractHoldersFunds",
+    "us-gaap:IncreaseDecreaseInBookOverdrafts",
+    "us-gaap:IncreaseDecreaseInCashCollateralForLoanedSecurities",
+    "us-gaap:IncreaseDecreaseInDemandDeposits",
+    "us-gaap:IncreaseDecreaseCashCollateralFromCounterparties",
+    "us-gaap:IncreaseDecreaseInFederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchaseNet",
+    "us-gaap:IncreaseDecreaseInFederalFundsSold",
+    "us-gaap:CashDividendsPaidToParentCompanyByUnconsolidatedSubsidiaries",
+    "us-gaap:PremiumsReceivableProceedsFromSaleOfReceivables",
+    "us-gaap:RepaymentOfNotesReceivableFromRelatedParties",
+    "us-gaap:SaleOfStockConsiderationReceivedOnTransaction",
+    "us-gaap:CashProvidedByUsedInFinancingActivitiesDiscontinuedOperations",
+    "us-gaap:CashProvidedByUsedInInvestingActivitiesDiscontinuedOperations"
+   ],
+   "outflow": [
+    "us-gaap:PaymentsToAcquireProductiveAssets",
+    "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+    "us-gaap:PaymentsToAcquireAndDevelopRealEstate",
+    "us-gaap:PaymentsToAcquireRealEstate",
+    "us-gaap:PaymentsForDepositsOnRealEstateAcquisitions",
+    "us-gaap:PaymentsToAcquireCommercialRealEstate",
+    "us-gaap:PaymentsToAcquireBuildings",
+    "us-gaap:PaymentsForCapitalImprovements",
+    "us-gaap:PaymentsToAcquireResidentialRealEstate",
+    "us-gaap:PaymentsToAcquireLand",
+    "us-gaap:PaymentsToAcquireLandHeldForUse",
+    "us-gaap:PaymentsToAcquireHeldForSaleRealEstate",
+    "us-gaap:PaymentsToAcquireOtherRealEstate",
+    "us-gaap:PaymentsToDevelopRealEstateAssets",
+    "us-gaap:PaymentsForConstructionInProcess",
+    "us-gaap:PaymentsToAcquireFurnitureAndFixtures",
+    "us-gaap:PaymentsToAcquireMachineryAndEquipment",
+    "us-gaap:PaymentsToAcquireOilAndGasPropertyAndEquipment",
+    "us-gaap:PaymentsToAcquireOilAndGasProperty",
+    "us-gaap:PaymentsToAcquireOilAndGasEquipment",
+    "us-gaap:PaymentsToExploreAndDevelopOilAndGasProperties",
+    "us-gaap:PaymentsToAcquireMiningAssets",
+    "us-gaap:PaymentsToAcquireTimberlands",
+    "us-gaap:PaymentsToAcquireWaterAndWasteWaterSystems",
+    "us-gaap:PaymentsToAcquireWaterSystems",
+    "us-gaap:PaymentsToAcquireWasteWaterSystems",
+    "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment",
+    "us-gaap:PaymentsForSoftware",
+    "us-gaap:PaymentsToAcquireSoftware",
+    "us-gaap:PaymentsToDevelopSoftware",
+    "us-gaap:PaymentsToAcquireIntangibleAssets",
+    "us-gaap:PaymentsToAcquireMineralRights",
+    "us-gaap:PaymentsToAcquireEquipmentOnLease",
+    "us-gaap:PaymentsForDelayedTaxExemptExchange",
+    "us-gaap:PaymentsToAcquireOtherProductiveAssets",
+    "us-gaap:PaymentsToAcquireInvestments",
+    "us-gaap:PaymentsToAcquireLimitedPartnershipInterests",
+    "us-gaap:PaymentsToAcquireMarketableSecurities",
+    "us-gaap:PaymentsToAcquireHeldToMaturitySecurities",
+    "us-gaap:PaymentsToAcquireMortgageBackedSecuritiesMBSCategorizedAsHeldToMaturity",
+    "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+    "us-gaap:PaymentsToAcquireMortgageBackedSecuritiesMBSCategorizedAsAvailableForSale",
+    "us-gaap:PaymentsToAcquireEquitySecuritiesFvNi",
+    "us-gaap:PaymentsToAcquireTradingSecuritiesHeldforinvestment",
+    "us-gaap:PaymentsToAcquireReceivables",
+    "us-gaap:PaymentsToAcquireNotesReceivable",
+    "us-gaap:PaymentsToAcquireMortgageNotesReceivable",
+    "us-gaap:PaymentsToAcquireLeaseReceivables",
+    "us-gaap:PaymentsToAcquireLoansReceivable",
+    "us-gaap:PaymentsToAcquireFinanceReceivables",
+    "us-gaap:PaymentsToAcquireRetainedInterestInSecuritizedReceivables",
+    "us-gaap:PaymentsForAdvanceToAffiliate",
+    "us-gaap:PaymentsForFederalHomeLoanBankAdvances",
+    "us-gaap:PaymentsToFundPolicyLoans",
+    "us-gaap:PaymentsToAcquireOtherReceivables",
+    "us-gaap:PaymentsToAcquireRestrictedInvestments",
+    "us-gaap:PaymentsToAcquireRestrictedCertificatesOfDeposit",
+    "us-gaap:PaymentsToAcquireRealEstateHeldForInvestment",
+    "us-gaap:PaymentsToAcquireTrustPreferredInvestments",
+    "us-gaap:PaymentsToAcquireProjects",
+    "us-gaap:PaymentsToInvestInDecommissioningFund",
+    "us-gaap:PaymentsToAcquireOtherInvestments",
+    "us-gaap:PaymentsToAcquireMortgageServicingRightsMSR",
+    "us-gaap:PaymentsToAcquirePartnersInterestInRealEstatePartnershipNetOfCashAcquired",
+    "us-gaap:PaymentsForProceedsFromOtherRealEstatePartnerships",
+    "us-gaap:PaymentsToAcquireBusinessesAndInterestInAffiliates",
+    "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
+    "us-gaap:PaymentsToAcquireBusinessesGross",
+    "us-gaap:OtherPaymentsToAcquireBusinesses",
+    "us-gaap:PaymentsForPreviousAcquisition",
+    "us-gaap:PaymentsToAcquireInProcessResearchAndDevelopment",
+    "us-gaap:PaymentsToAcquireInterestInSubsidiariesAndAffiliates",
+    "us-gaap:PaymentsToAcquireAdditionalInterestInSubsidiaries",
+    "us-gaap:PaymentsToAcquireEquityMethodInvestments",
+    "us-gaap:PaymentsToAcquireInterestInJointVenture",
+    "us-gaap:PaymentsToAcquireFederalHomeLoanBankStock",
+    "us-gaap:PaymentsToAcquireFederalReserveStock",
+    "us-gaap:PaymentsToAcquireLoansAndLeasesHeldForInvestment",
+    "us-gaap:PaymentsToAcquireLoansAndLeasesHeldForInvestmentCreditCardSecuritizations",
+    "us-gaap:PaymentsToAcquireLoansHeldForInvestment",
+    "us-gaap:PaymentsToAcquireLeasesHeldForInvestment",
+    "us-gaap:PaymentsToAcquireOtherLoansAndLeasesHeldForInvestment",
+    "us-gaap:PaymentsToAcquireLifeInsurancePolicies",
+    "us-gaap:PaymentsForRemovalCosts",
+    "us-gaap:PaymentsForNuclearFuel",
+    "us-gaap:PaymentsToFundLongtermLoansToRelatedParties",
+    "us-gaap:PaymentsForHedgeInvestingActivities",
+    "us-gaap:PaymentsForDerivativeInstrumentInvestingActivities",
+    "us-gaap:PaymentsForInvestmentInRestrictedCashFromPollutionControlBond",
+    "us-gaap:PaymentsToAcquireRoyaltyInterestsInMiningProperties",
+    "us-gaap:PaymentForContingentConsiderationLiabilityInvestingActivities",
+    "us-gaap:RepaymentsOfAdvancesForConstruction",
+    "us-gaap:AssetRetirementObligationCashPaidToSettle",
+    "us-gaap:LiabilityForAsbestosAndEnvironmentalClaimsGrossPaymentForClaims",
+    "us-gaap:LiabilityForAsbestosAndEnvironmentalClaimsNetPaymentForClaims",
+    "us-gaap:LossContingencyAccrualPayments",
+    "us-gaap:AccrualForEnvironmentalLossContingenciesPayments1",
+    "us-gaap:LiabilitiesSubjectToCompromisePaymentsUnderBankruptcyCourtOrderForFreightAndDistributionCosts",
+    "us-gaap:LiabilitiesSubjectToCompromisePaymentsUnderBankruptcyCourtOrderForOtherLiabilities",
+    "us-gaap:LiabilitiesSubjectToCompromisePaymentsUnderBankruptcyCourtOrderForResolutionsOfContingenciesSubjectToChapter11",
+    "us-gaap:PaymentsForRestructuring",
+    "us-gaap:PaymentsForAffordableHousingPrograms",
+    "us-gaap:SeparateAccountLiabilityBenefitPayment",
+    "us-gaap:PolicyholderAccountBalanceBenefitPayment",
+    "us-gaap:PaymentsForRepurchaseOfRedeemableNoncontrollingInterest",
+    "us-gaap:PaymentsForRepurchaseOfTrustPreferredSecurities",
+    "us-gaap:PaymentsForRepurchaseOfRedeemablePreferredStock",
+    "us-gaap:PaymentsForRepurchaseOfRedeemableConvertiblePreferredStock",
+    "us-gaap:PaymentsForRepurchaseOfEquity",
+    "us-gaap:PaymentsForRepurchaseOfCommonStock",
+    "us-gaap:PaymentsForRepurchaseOfPreferredStockAndPreferenceStock",
+    "us-gaap:PaymentsForRepurchaseOfConvertiblePreferredStock",
+    "us-gaap:PaymentsForRepurchaseOfPrivatePlacement",
+    "us-gaap:PaymentsForRepurchaseOfInitialPublicOffering",
+    "us-gaap:PaymentsForRepurchaseOfWarrants",
+    "us-gaap:PaymentsForRepurchaseOfOtherEquity",
+    "us-gaap:PaymentsOfDividends",
+    "us-gaap:PaymentsOfOrdinaryDividends",
+    "us-gaap:PaymentsOfDividendsCommonStock",
+    "us-gaap:PaymentsOfDividendsPreferredStockAndPreferenceStock",
+    "us-gaap:PaymentsOfDividendsMinorityInterest",
+    "us-gaap:PaymentsOfCapitalDistribution",
+    "us-gaap:DistributionMadeToLimitedLiabilityCompanyLLCMemberCashDistributionsPaid",
+    "us-gaap:DistributionMadeToLimitedPartnerCashDistributionsPaid",
+    "us-gaap:OriginationOfLoansToEmployeeStockOwnershipPlans",
+    "us-gaap:OperatingLeasePaymentsUse",
+    "us-gaap:OriginationOfLoanToPurchaseCommonStock",
+    "us-gaap:PaymentsOfDerivativeIssuanceCosts",
+    "us-gaap:PaymentsOfDebtRestructuringCosts",
+    "us-gaap:PaymentsOfDebtExtinguishmentCosts",
+    "us-gaap:PaymentsForLeasingCostsCommissionsAndTenantImprovements",
+    "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+    "us-gaap:PaymentsForLeasingCosts",
+    "us-gaap:PaymentsOfDistributionsToAffiliates",
+    "us-gaap:PaymentsForTenantImprovements",
+    "us-gaap:PaymentsOfMergerRelatedCostsFinancingActivities",
+    "us-gaap:PaymentsForLeaseCommissions",
+    "us-gaap:PaymentForContingentConsiderationLiabilityFinancingActivities",
+    "us-gaap:PaymentsForDerivativeInstrumentFinancingActivities",
+    "us-gaap:PaymentsToAcquireManagementContractRights",
+    "us-gaap:OriginationOfNotesReceivableFromRelatedParties",
+    "us-gaap:RepaymentsOfLinesOfCredit",
+    "us-gaap:RepaymentsOfCommercialPaper",
+    "us-gaap:RepaymentsOfBankDebt",
+    "us-gaap:PaymentsForMortgageDeposits",
+    "us-gaap:RepaymentsOfSubordinatedShortTermDebt",
+    "us-gaap:RepaymentsOfNotesPayable",
+    "us-gaap:RepaymentsOfConstructionLoansPayable",
+    "us-gaap:RepaymentsOfOtherShortTermDebt",
+    "us-gaap:RepaymentsOfLongTermDebtAndCapitalSecurities",
+    "us-gaap:RepaymentsOfLongTermDebt",
+    "us-gaap:RepaymentsOfLongTermLinesOfCredit",
+    "us-gaap:RepaymentsOfMediumTermNotes",
+    "us-gaap:RepaymentsOfSeniorDebt",
+    "us-gaap:MaturitiesOfSeniorDebt",
+    "us-gaap:EarlyRepaymentOfSeniorDebt",
+    "us-gaap:RepaymentsOfSubordinatedDebt",
+    "us-gaap:MaturitiesOfSubordinatedDebt",
+    "us-gaap:EarlyRepaymentOfSubordinatedDebt",
+    "us-gaap:RepaymentsOfFederalHomeLoanBankBorrowings",
+    "us-gaap:RepaymentsOfConvertibleDebt",
+    "us-gaap:PaymentsForSecuritiesPurchasedUnderAgreementsToResell",
+    "us-gaap:RepaymentsOfRelatedPartyDebt",
+    "us-gaap:RepaymentsOfAssumedDebt",
+    "us-gaap:RepaymentsOfUnsecuredTaxExemptDebt",
+    "us-gaap:RepaymentsOfSecuredDebt",
+    "us-gaap:RepaymentsOfUnsecuredDebt",
+    "us-gaap:RepaymentsOfFirstMortgageBond",
+    "us-gaap:RepaymentsOfPollutionControlBond",
+    "us-gaap:RepaymentsOfOtherLongTermDebt",
+    "us-gaap:FinanceLeasePrincipalPayments",
+    "us-gaap:RepaymentsOfMandatoryRedeemableCapitalSecurities",
+    "us-gaap:WithdrawalFromContractHoldersFunds",
+    "us-gaap:RepaymentsOfAnnuitiesAndInvestmentCertificates",
+    "us-gaap:RepaymentsOfOtherDebt",
+    "us-gaap:PaymentsForDepositsAppliedToDebtRetirements",
+    "us-gaap:RepaymentsOfLongtermLoansFromVendors",
+    "us-gaap:PaymentOfFinancingAndStockIssuanceCosts",
+    "us-gaap:PaymentsOfFinancingCosts",
+    "us-gaap:PaymentsOfDebtIssuanceCosts",
+    "us-gaap:PaymentsOfLoanCosts",
+    "us-gaap:PaymentsOfStockIssuanceCosts",
+    "us-gaap:PaymentsForHedgeFinancingActivities",
+    "us-gaap:CashDivestedFromDeconsolidation",
+    "us-gaap:PaymentsForMergerRelatedCosts",
+    "us-gaap:PaymentsForOriginationOfMortgageLoansHeldForSale",
+    "us-gaap:PaymentsToPurchaseMortgageLoansHeldForSale",
+    "us-gaap:PaymentsForPurchaseOfSecuritiesOperatingActivities",
+    "us-gaap:PaymentsForPurchaseOfOtherAssets1",
+    "us-gaap:PaymentsForDeposits",
+    "us-gaap:PaymentsForDepositsWithOtherInstitutions",
+    "us-gaap:PaymentsForTimeDeposits",
+    "us-gaap:PaymentsForLoans",
+    "us-gaap:PensionAndOtherPostretirementBenefitContributions",
+    "us-gaap:PensionContributions",
+    "us-gaap:OtherPostretirementBenefitsPayments",
+    "us-gaap:PaymentsForPostemploymentBenefits",
+    "us-gaap:PaymentsToEmployees",
+    "us-gaap:PaymentForContingentConsiderationLiabilityOperatingActivities",
+    "us-gaap:PaymentToAcquireLifeInsurancePolicyOperatingActivities",
+    "us-gaap:PaymentsForOtherOperatingActivities",
+    "us-gaap:ShortTermLeasePayments",
+    "us-gaap:VariableLeasePayment",
+    "us-gaap:PaymentsForFees",
+    "us-gaap:FinanceLeaseInterestPaymentOnLiability",
+    "us-gaap:PaymentsToSuppliers",
+    "us-gaap:OperatingLeasePayments",
+    "us-gaap:InterestPaidNet",
+    "us-gaap:IncomeTaxesPaid",
+    "us-gaap:PaymentsToSuppliersAndEmployees",
+    "us-gaap:PaymentsForOtherTaxes",
+    "us-gaap:PaymentForAdministrativeFees",
+    "us-gaap:PaymentForIncentiveFee",
+    "us-gaap:PaymentForManagementFee",
+    "us-gaap:PaymentsForCommissions",
+    "us-gaap:PaymentsForBrokerageFees",
+    "us-gaap:PaymentsForRoyalties",
+    "us-gaap:PaymentsForLegalSettlements",
+    "us-gaap:PaymentsForEnvironmentalLiabilities",
+    "us-gaap:PaymentsForReinsurance",
+    "us-gaap:PaymentsForLossesAndLossAdjustmentExpense",
+    "us-gaap:PaymentsForUnderwritingExpense",
+    "us-gaap:PaymentsForRent",
+    "us-gaap:PaymentForAcquisitionCryptoAsset",
+    "us-gaap:PaymentForAdvanceForConstructionFinancingActivity",
+    "us-gaap:PaymentsForBondsTransferredToOtherOtherFederalHomeLoanBanks",
+    "us-gaap:PaymentsForCongressionallyMandatedFederalHomeLoanBankAssessments",
+    "us-gaap:PaymentsForFilmCosts",
+    "us-gaap:PaymentsForFlightEquipment",
+    "us-gaap:PaymentsForOperatingActivities",
+    "us-gaap:PaymentsForOriginationAndPurchasesOfLoansHeldForSale",
+    "us-gaap:PaymentsForOtherDeposits",
+    "us-gaap:PaymentsForParticipationLiabilities",
+    "us-gaap:PaymentsForProceedsFromAvailableforsaleSecuritiesShortterm",
+    "us-gaap:PaymentsForProceedsFromBusinessesAndInterestInAffiliates",
+    "us-gaap:PaymentsForProceedsFromDelayedTaxExemptExchange",
+    "us-gaap:PaymentsForProceedsFromDepositOnLoan",
+    "us-gaap:PaymentsForProceedsFromDepositsOnRealEstateAcquisitions",
+    "us-gaap:PaymentsForProceedsFromDerivativeInstrumentFinancingActivities",
+    "us-gaap:PaymentsForProceedsFromDerivativeInstrumentInvestingActivities",
+    "us-gaap:PaymentsForProceedsFromFederalHomeLoanBankStock",
+    "us-gaap:PaymentsForProceedsFromFederalReserveBankStock",
+    "us-gaap:PaymentsForProceedsFromHedgeFinancingActivities",
+    "us-gaap:PaymentsForProceedsFromHedgeInvestingActivities",
+    "us-gaap:PaymentsForProceedsFromHeldtomaturitySecuritiesShortterm",
+    "us-gaap:PaymentsForProceedsFromInvestments",
+    "us-gaap:PaymentsForProceedsFromLifeInsurancePolicies",
+    "us-gaap:PaymentsForProceedsFromLimitedPartnership",
+    "us-gaap:PaymentsForProceedsFromLoansAndLeases",
+    "us-gaap:PaymentsForProceedsFromLoansReceivable",
+    "us-gaap:PaymentsForProceedsFromLongtermInvestments",
+    "us-gaap:PaymentsForProceedsFromMortgageDeposits",
+    "us-gaap:PaymentsForProceedsFromMortgageServicingRights",
+    "us-gaap:PaymentsForProceedsFromNuclearFuel",
+    "us-gaap:PaymentsForProceedsFromOtherDeposits",
+    "us-gaap:PaymentsForProceedsFromOtherInterestEarningAssets",
+    "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+    "us-gaap:PaymentsForProceedsFromOtherLoansAndLeases",
+    "us-gaap:PaymentsForProceedsFromPolicyLoans",
+    "us-gaap:PaymentsForProceedsFromProductiveAssets",
+    "us-gaap:PaymentsForProceedsFromRealEstateHeldforinvestment",
+    "us-gaap:PaymentsForProceedsFromRealEstatePartnershipInvestmentNet",
+    "us-gaap:PaymentsForProceedsFromRemovalCosts",
+    "us-gaap:PaymentsForProceedsFromShortTermInvestments",
+    "us-gaap:PaymentsForProceedsFromTenantAllowance",
+    "us-gaap:PaymentsToAcquireAssetsInvestingActivities",
+    "us-gaap:PaymentsToAcquireBusinessThreeNetOfCashAcquired",
+    "us-gaap:PaymentsToAcquireBusinessTwoNetOfCashAcquired",
+    "us-gaap:PaymentsToAcquireLongtermInvestments",
+    "us-gaap:PaymentsToAcquireRealEstateAndRealEstateJointVentures",
+    "us-gaap:PaymentsToAcquireShortTermInvestments",
+    "us-gaap:PaymentsToMinorityShareholders",
+    "us-gaap:PaymentsToPurchaseLoansHeldForSale",
+    "us-gaap:PaymentsToPurchaseOtherLoansHeldForSale",
+    "us-gaap:DebtInstrumentSinkingFundPayment",
+    "us-gaap:IncomeTaxesPaidNet",
+    "us-gaap:IncomeTaxPaidFederalAfterRefundReceived",
+    "us-gaap:IncomeTaxPaidFederalBeforeRefundReceived",
+    "us-gaap:IncomeTaxPaidForeignAfterRefundReceived",
+    "us-gaap:IncomeTaxPaidForeignBeforeRefundReceived",
+    "us-gaap:IncomeTaxPaidStateAndLocalAfterRefundReceived",
+    "us-gaap:IncomeTaxPaidStateAndLocalBeforeRefundReceived",
+    "us-gaap:LossContingencyDamagesPaidValue",
+    "us-gaap:RepaymentsOfAccountsReceivableSecuritization",
+    "us-gaap:RepaymentsOfDebt",
+    "us-gaap:RepaymentsOfDebtAndCapitalLeaseObligations",
+    "us-gaap:RepaymentsOfDebtMaturingInMoreThanThreeMonths",
+    "us-gaap:RepaymentsOfShortTermDebt",
+    "us-gaap:RepaymentsOfShortTermDebtMaturingInMoreThanThreeMonths",
+    "us-gaap:RepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess",
+    "us-gaap:DistributionsOnMandatorilyRedeemableSecurities"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents": {
+   "inflow": [
+    "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffectContinuingOperations",
+    "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffectContinuingOperations"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations": {
+   "inflow": [
+    "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect",
+    "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ClosedBlockAssetsAndLiabilitiesMaximumFutureEarningsToBeRecognized": {
+   "inflow": [
+    "us-gaap:ClosedBlockAssetsAndLiabilitiesMaximumFutureEarningsToBeRecognizedOtherAdjustments",
+    "us-gaap:ClosedBlockAssetsAndLiabilitiesMaximumFutureEarningsToBeRecognizedPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ClosedBlockLiabilitiesPolicyholderDividendObligation": {
+   "inflow": [
+    "us-gaap:ClosedBlockDividendObligationIncreaseDecreaseForEffectOfOperatingResults",
+    "us-gaap:ClosedBlockDividendObligationChangeInUnrealizedInvestmentGainsLosses",
+    "us-gaap:ClosedBlockDividendObligationPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:CommonStockValue": {
+   "inflow": [
+    "us-gaap:StockGrantedDuringPeriodValueSharebasedCompensation",
+    "us-gaap:StockGrantedDuringPeriodValueSharebasedCompensationGross",
+    "us-gaap:StockIssuedDuringPeriodValueAcquisitions",
+    "us-gaap:StockIssuedDuringPeriodValueConversionOfConvertibleSecurities",
+    "us-gaap:StockIssuedDuringPeriodValueConversionOfConvertibleSecuritiesNetOfAdjustments",
+    "us-gaap:StockIssuedDuringPeriodValueConversionOfUnits",
+    "us-gaap:StockIssuedDuringPeriodValueEmployeeBenefitPlan",
+    "us-gaap:StockIssuedDuringPeriodValueEmployeeStockOwnershipPlan",
+    "us-gaap:StockIssuedDuringPeriodValueEmployeeStockPurchasePlan",
+    "us-gaap:StockIssuedDuringPeriodValueIssuedForServices",
+    "us-gaap:StockIssuedDuringPeriodValueOther",
+    "us-gaap:StockIssuedDuringPeriodValuePurchaseOfAssets",
+    "us-gaap:StockIssuedDuringPeriodValueRestrictedStockAwardGross",
+    "us-gaap:StockIssuedDuringPeriodValueRestrictedStockAwardNetOfForfeitures",
+    "us-gaap:StockIssuedDuringPeriodValueShareBasedCompensationGross",
+    "us-gaap:StockIssuedDuringPeriodValueStockDividend",
+    "us-gaap:StockIssuedDuringPeriodValueStockOptionsExercised",
+    "us-gaap:StockIssuedDuringPeriodValueTreasuryStockReissued"
+   ],
+   "outflow": [
+    "us-gaap:StockRedeemedOrCalledDuringPeriodValue"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ContractWithCustomerAssetAccumulatedAllowanceForCreditLoss": {
+   "inflow": [
+    "us-gaap:ContractWithCustomerAssetAllowanceForCreditLossRecovery",
+    "us-gaap:ContractWithCustomerAssetAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ContractWithCustomerAssetAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ContractWithCustomerAssetGross": {
+   "inflow": [
+    "us-gaap:ContractWithCustomerAssetIncreaseDecreaseForContractAcquiredInBusinessCombination",
+    "us-gaap:ContractWithCustomerAssetPurchase"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ContractWithCustomerAssetAccumulatedAllowanceForCreditLoss"
+   ]
+  },
+  "us-gaap:ContractWithCustomerAssetGrossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ContractWithCustomerAssetAccumulatedAllowanceForCreditLossCurrent"
+   ]
+  },
+  "us-gaap:ContractWithCustomerAssetGrossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ContractWithCustomerAssetAccumulatedAllowanceForCreditLossNoncurrent"
+   ]
+  },
+  "us-gaap:ContractWithCustomerReceivableAllowanceForCreditLoss": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:ContractWithCustomerReceivableCreditLossExpenseReversal"
+   ],
+   "contra": []
+  },
+  "us-gaap:ContractWithCustomerReceivableAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:ContractWithCustomerReceivableCreditLossExpenseReversal"
+   ],
+   "contra": []
+  },
+  "us-gaap:ContractWithCustomerReceivableAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:ContractWithCustomerReceivableCreditLossExpenseReversal"
+   ],
+   "contra": []
+  },
+  "us-gaap:ContractWithCustomerReceivableBeforeAllowanceForCreditLoss": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ContractWithCustomerReceivableAllowanceForCreditLoss"
+   ]
+  },
+  "us-gaap:ContractWithCustomerReceivableBeforeAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ContractWithCustomerReceivableAllowanceForCreditLossCurrent"
+   ]
+  },
+  "us-gaap:ContractWithCustomerReceivableBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ContractWithCustomerReceivableAllowanceForCreditLossNoncurrent"
+   ]
+  },
+  "us-gaap:CryptoAssetFairValue": {
+   "inflow": [
+    "us-gaap:CryptoAssetAddition",
+    "us-gaap:CryptoAssetCustomerReceipt",
+    "us-gaap:CryptoAssetMining",
+    "us-gaap:CryptoAssetPurchase",
+    "us-gaap:CryptoAssetPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:CryptoAssetDisposition",
+    "us-gaap:CryptoAssetPaymentForService",
+    "us-gaap:CryptoAssetSale"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:CustomersLiabilityForAcceptancesGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AllowanceForUncollectibleCustomersLiabilityForAcceptances"
+   ]
+  },
+  "us-gaap:DebtInstrumentCarryingAmount": {
+   "inflow": [
+    "us-gaap:DebtInstrumentIncreaseAccruedInterest",
+    "us-gaap:DebtInstrumentIncreaseDecreaseOtherNet",
+    "us-gaap:DebtInstrumentIssuedPrincipal"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DebtInstrumentUnamortizedDiscountPremiumNet": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:AmortizationOfDebtDiscountPremium"
+   ],
+   "contra": []
+  },
+  "us-gaap:DebtIssuanceCostsLineOfCreditArrangementsGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AccumulatedAmortizationOfDebtIssuanceCostsLineOfCreditArrangements"
+   ]
+  },
+  "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLoss": {
+   "inflow": [
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossPurchasedWithCreditDeteriorationIncrease",
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossRecovery",
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossSecuritiesSold",
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossSellBeforeRecovery",
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DebtSecuritiesAvailableForSaleAmortizedCostAllowanceForCreditLossExcludingAccruedInterest": {
+   "inflow": [
+    "us-gaap:DebtSecuritiesAvailableForSaleExcludingAccruedInterestPurchasedWithCreditDeteriorationAllowanceForCreditLossAtAcquisitionDate",
+    "us-gaap:DebtSecuritiesAvailableForSaleExcludingAccruedInterestAllowanceForCreditLossRecovery",
+    "us-gaap:DebtSecuritiesAvailableForSaleExcludingAccruedInterestAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DebtSecuritiesAvailableForSaleExcludingAccruedInterestAllowanceForCreditLossSecuritiesSold",
+    "us-gaap:DebtSecuritiesAvailableForSaleExcludingAccruedInterestAllowanceForCreditLossSellBeforeRecovery",
+    "us-gaap:DebtSecuritiesAvailableForSaleExcludingAccruedInterestAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DebtSecuritiesAvailableForSaleAmortizedCostCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossCurrent"
+   ]
+  },
+  "us-gaap:DebtSecuritiesAvailableForSaleAmortizedCostExcludingAccruedInterestBeforeAllowanceForCreditLoss": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesAvailableForSaleAmortizedCostAllowanceForCreditLossExcludingAccruedInterest"
+   ]
+  },
+  "us-gaap:DebtSecuritiesAvailableForSaleAmortizedCostExcludingAccruedInterestBeforeAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesAvailableForSaleAmortizedCostAllowanceForCreditLossExcludingAccruedInterestCurrent"
+   ]
+  },
+  "us-gaap:DebtSecuritiesAvailableForSaleAmortizedCostExcludingAccruedInterestBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesAvailableForSaleAmortizedCostAllowanceForCreditLossExcludingAccruedInterestNoncurrent"
+   ]
+  },
+  "us-gaap:DebtSecuritiesAvailableForSaleAmortizedCostNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossNoncurrent"
+   ]
+  },
+  "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLoss": {
+   "inflow": [
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossPurchasedWithCreditDeteriorationIncrease",
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossRecovery",
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossExcludingAccruedInterest": {
+   "inflow": [
+    "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestPurchasedWithCreditDeteriorationAllowanceForCreditLossAtAcquisitionDate",
+    "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestAllowanceForCreditLossRecovery",
+    "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestBeforeAllowanceForCreditLoss": {
+   "inflow": [],
+   "outflow": [
+    "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestSale"
+   ],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossExcludingAccruedInterest"
+   ]
+  },
+  "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestBeforeAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossExcludingAccruedInterestCurrent"
+   ]
+  },
+  "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossExcludingAccruedInterestNoncurrent"
+   ]
+  },
+  "us-gaap:DeferredCostsLeasingGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DeferredCostsLeasingAccumulatedAmortization"
+   ]
+  },
+  "us-gaap:DeferredFinanceCostsCurrentGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AccumulatedAmortizationOfCurrentDeferredFinanceCosts"
+   ]
+  },
+  "us-gaap:DeferredFinanceCostsGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AccumulatedAmortizationDeferredFinanceCosts"
+   ]
+  },
+  "us-gaap:DeferredFinanceCostsNoncurrentGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AccumulatedAmortizationOfNoncurrentDeferredFinanceCosts"
+   ]
+  },
+  "us-gaap:DeferredFinanceCostsOwnshareLendingArrangementIssuanceCostsAccumulatedAmortization": {
+   "inflow": [
+    "us-gaap:DeferredFinanceCostsOwnshareLendingArrangementIssuanceCostsAccumulatedAmortizationAdjustment",
+    "us-gaap:DeferredFinanceCostsOwnshareLendingArrangementIssuanceCostsAmortizationExpensePeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DeferredFinanceCostsOwnshareLendingArrangementIssuanceCostsGross": {
+   "inflow": [],
+   "outflow": [
+    "us-gaap:DeferredFinanceCostsOwnshareLendingArrangementIssuanceCostsAdjustment"
+   ],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DeferredFinanceCostsOwnshareLendingArrangementIssuanceCostsAccumulatedAmortization"
+   ]
+  },
+  "us-gaap:DeferredIncome": {
+   "inflow": [
+    "us-gaap:DeferredIncomeAddition",
+    "us-gaap:DeferredIncomePeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DeferredPolicyAcquisitionCosts": {
+   "inflow": [
+    "us-gaap:DeferredPolicyAcquisitionCostsAdditions",
+    "us-gaap:DeferredPolicyAcquisitionCostForeignCurrencyTranslationAdjustmentAndOther",
+    "us-gaap:DeferredPolicyAcquisitionCostsPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DeferredPolicyAcquisitionCostsDisposition"
+   ],
+   "accrual": [
+    "us-gaap:DeferredPolicyAcquisitionCostAmortizationExpense"
+   ],
+   "contra": []
+  },
+  "us-gaap:DeferredPolicyAcquisitionCostsAndValueOfBusinessAcquired": {
+   "inflow": [
+    "us-gaap:DeferredPolicyAcquisitionCostsAndPresentValueOfFutureProfitsAdditions",
+    "us-gaap:DeferredPolicyAcquisitionCostsAndPresentValueOfFutureProfitsPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DeferredPolicyAcquisitionCostsAndPresentValueOfFutureInsuranceProfitsDisposition"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DeferredSalesInducementsNet": {
+   "inflow": [
+    "us-gaap:DeferredSalesInducementsAdjustments",
+    "us-gaap:DeferredSalesInducementsAdditions",
+    "us-gaap:DeferredSalesInducementsPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DeferredSalesInducementCostDisposition"
+   ],
+   "accrual": [
+    "us-gaap:DeferredSalesInducementsAmortizationExpense"
+   ],
+   "contra": []
+  },
+  "us-gaap:DeferredStormAndPropertyReserveDeficiencyNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:StormDamageProvision"
+   ],
+   "contra": []
+  },
+  "us-gaap:DeferredTaxAssetsGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DeferredTaxAssetsValuationAllowance"
+   ]
+  },
+  "us-gaap:DefinedBenefitPlanAccumulatedBenefitObligation": {
+   "inflow": [
+    "us-gaap:DefinedBenefitPlanAccumulatedBenefitObligationIncreaseDecreaseForPlanAmendment"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DefinedBenefitPlanAccumulatedOtherComprehensiveIncomeNetPriorServiceCostCreditAfterTax": {
+   "inflow": [
+    "us-gaap:OtherComprehensiveIncomeDefinedBenefitPlanNetPriorServiceCostsCreditArisingDuringPeriodNetOfTax"
+   ],
+   "outflow": [
+    "us-gaap:OtherComprehensiveIncomeLossAmortizationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansForNetPriorServiceCostCreditNetOfTax"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DefinedBenefitPlanBenefitObligation": {
+   "inflow": [
+    "us-gaap:DefinedBenefitPlanPlanAmendments",
+    "us-gaap:DefinedBenefitPlanBusinessCombinationsAndAcquisitionsBenefitObligation",
+    "us-gaap:DefinedBenefitPlanSpecialTerminationBenefits",
+    "us-gaap:DefinedBenefitPlanOtherChanges",
+    "us-gaap:DefinedBenefitPlanBenefitObligationPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DefinedBenefitPlanDivestituresBenefitObligation",
+    "us-gaap:DefinedBenefitPlanCurtailments",
+    "us-gaap:DefinedBenefitPlanSettlementsBenefitObligation"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DefinedBenefitPlanFairValueOfPlanAssets": {
+   "inflow": [
+    "us-gaap:DefinedBenefitPlanActualReturnOnPlanAssets",
+    "us-gaap:DefinedBenefitPlanContributionsByEmployer",
+    "us-gaap:DefinedBenefitPlanPlanAssetsContributionsByPlanParticipant",
+    "us-gaap:DefinedBenefitPlanPlanAssetsPrescriptionDrugSubsidyReceipt",
+    "us-gaap:DefinedBenefitPlanBusinessCombinationsAndAcquisitionsPlanAssets",
+    "us-gaap:DefinedBenefitPlanAssetsTransferredToFromPlan",
+    "us-gaap:DefinedBenefitPlanActualReturnOnPlanAssetsStillHeld",
+    "us-gaap:DefinedBenefitPlanActualReturnOnPlanAssetsSoldDuringPeriod",
+    "us-gaap:DefinedBenefitPlanPlanAssetsLevel3ReconciliationIncreaseForPurchase",
+    "us-gaap:DefinedBenefitPlanPurchasesSalesAndSettlements",
+    "us-gaap:DefinedBenefitPlanTransfersBetweenMeasurementLevels",
+    "us-gaap:DefinedBenefitPlanChangeInFairValueOfPlanAssetsLevel3ReconciliationPeriodIncreaseDecrease",
+    "us-gaap:DefinedBenefitPlanFairValueOfPlanAssetsPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DefinedBenefitPlanPlanAssetsBenefitsPaid",
+    "us-gaap:DefinedBenefitPlanDivestituresPlanAssets",
+    "us-gaap:DefinedBenefitPlanSettlementsPlanAssets",
+    "us-gaap:DefinedBenefitPlanPlanAssetsLevel3ReconciliationDecreaseForSale",
+    "us-gaap:DefinedBenefitPlanPlanAssetsLevel3ReconciliationDecreaseForSettlement"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DevelopmentCostsCumulative": {
+   "inflow": [
+    "us-gaap:DevelopmentCosts"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DirectFinancingLeaseNetInvestmentInLease": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseAllowanceForCreditLoss"
+   ]
+  },
+  "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseAllowanceForCreditLoss": {
+   "inflow": [
+    "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseAllowanceForCreditLossRecovery",
+    "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseBeforeAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseAllowanceForCreditLossCurrent"
+   ]
+  },
+  "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseAllowanceForCreditLossNoncurrent"
+   ]
+  },
+  "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseExcludingAccruedInterestBeforeAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseAllowanceForCreditLossExcludingAccruedInterestCurrent"
+   ]
+  },
+  "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseExcludingAccruedInterestBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DirectFinancingLeaseNetInvestmentInLeaseAllowanceForCreditLossExcludingAccruedInterestNoncurrent"
+   ]
+  },
+  "us-gaap:EnvironmentalCostsRecognizedCapitalized": {
+   "inflow": [
+    "us-gaap:EnvironmentalCostsRecognizedCapitalizedInPeriod"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:EquitySecuritiesFvNiCurrentAndNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss"
+   ],
+   "contra": []
+  },
+  "us-gaap:EscrowDeposit": {
+   "inflow": [
+    "us-gaap:EscrowDepositsRelatedToPropertySales"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ExplorationCostsCumulative": {
+   "inflow": [
+    "us-gaap:ExplorationCosts"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ExtendedProductWarrantyAccrual": {
+   "inflow": [
+    "us-gaap:ExtendedProductWarrantyAccrualWarrantiesIssued",
+    "us-gaap:ExtendedProductWarrantyAccrualPreexistingIncreaseDecrease",
+    "us-gaap:ExtendedProductWarrantyAccrualAdditionsFromBusinessAcquisition",
+    "us-gaap:ExtendedProductWarrantyAccrualPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ExtendedProductWarrantyAccrualPayments"
+   ],
+   "accrual": [
+    "us-gaap:ExtendedProductWarrantyAccrualForeignCurrencyTranslationGainLoss"
+   ],
+   "contra": []
+  },
+  "us-gaap:FDICIndemnificationAsset": {
+   "inflow": [
+    "us-gaap:FDICIndemnificationAssetAcquisitions",
+    "us-gaap:FDICIndemnificationAssetAdditionalEstimatedLosses",
+    "us-gaap:FDICIndemnificationAssetAccretionOfDiscount",
+    "us-gaap:FDICIndemnificationAssetPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:FDICIndemnificationAssetCashPaymentsReceived",
+    "us-gaap:FDICIndemnificationAssetNetWriteOffs",
+    "us-gaap:FDICIndemnificationAssetDisposals"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetValue": {
+   "inflow": [
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetPeriodIncreaseDecrease",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetIssues",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetPurchases",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetPurchasesSalesIssuancesSettlements"
+   ],
+   "outflow": [
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetSales",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetSettlements"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationsRecurringBasisLiabilityValue": {
+   "inflow": [
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityPeriodIncreaseDecrease",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityIssues",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityPurchases",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityPurchasesSalesIssuancesSettlements"
+   ],
+   "outflow": [
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilitySales",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilitySettlements"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisWithUnobservableInputs": {
+   "inflow": [
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationPurchases",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationIssues",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationPurchasesSalesIssuesSettlements",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationTransfersIntoLevel3",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationTransfersNet",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationSales",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationSettlements",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationTransfersOutOfLevel3"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:FinanceLeaseRightOfUseAsset": {
+   "inflow": [
+    "us-gaap:RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:FinanceLeaseRightOfUseAssetAccumulatedAmortization": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:FinanceLeaseRightOfUseAssetAmortization"
+   ],
+   "contra": []
+  },
+  "us-gaap:FinanceLeaseRightOfUseAssetBeforeAccumulatedAmortization": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:FinanceLeaseRightOfUseAssetAccumulatedAmortization"
+   ]
+  },
+  "us-gaap:FinancialGuaranteeInsuranceContractsPremiumReceivable": {
+   "inflow": [
+    "us-gaap:FinancialGuaranteeInsuranceContractsPremiumsReceivableAdjustment",
+    "us-gaap:FinancialGuaranteeInsuranceContractsPremiumsReceivableAdjustmentChangeInPeriodOfContract",
+    "us-gaap:FinancialGuaranteeInsuranceContractsPremiumsReceivableAdjustmentOtherAdjustments",
+    "us-gaap:FinancialGuaranteeInsuranceContractsPremiumsReceivablePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:FinancialGuaranteeInsuranceContractsPremiumsReceivableAccretionOfDiscountOnPremiumReceivable"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:FinancingReceivableAllowanceForCreditLossExcludingAccruedInterest": {
+   "inflow": [
+    "us-gaap:FinancingReceivableExcludingAccruedInterestPurchasedWithCreditDeteriorationAllowanceForCreditLossAtAcquisitionDate",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestAllowanceForCreditLossRecovery",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestAllowanceForCreditLossLoanPurchased",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:FinancingReceivableExcludingAccruedInterestAllowanceForCreditLossWriteoff",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestAllowanceForCreditLossLoanSold",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestAllowanceForCreditLossWriteoffAfterRecovery"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:FinancingReceivableAllowanceForCreditLosses": {
+   "inflow": [
+    "us-gaap:FinancingReceivableAllowanceForCreditLossPurchasedWithCreditDeteriorationIncrease",
+    "us-gaap:FinancingReceivableAllowanceForCreditLossesRecovery",
+    "us-gaap:FinancingReceivableAllowanceForCreditLossLoanPurchased",
+    "us-gaap:FinancingReceivableAllowanceForCreditLossesPeriodIncreaseDecrease",
+    "us-gaap:FinancingReceivableAllowanceForCreditLossPurchasedSeasonedLoan"
+   ],
+   "outflow": [
+    "us-gaap:FinancingReceivableAllowanceForCreditLossWriteoffAfterRecovery",
+    "us-gaap:FinancingReceivableAllowanceForCreditLossesWriteOffs",
+    "us-gaap:FinancingReceivableAllowanceForCreditLossLoanSold"
+   ],
+   "accrual": [
+    "us-gaap:ProvisionForLoanLossesExpensed",
+    "us-gaap:ProvisionForLoanLeaseAndOtherLosses"
+   ],
+   "contra": []
+  },
+  "us-gaap:FinancingReceivableCoveredBeforeAllowanceForCreditLoss": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:FinancingReceivableCoveredAllowanceForCreditLoss"
+   ]
+  },
+  "us-gaap:FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLoss": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:FinancingReceivableAllowanceForCreditLossExcludingAccruedInterest"
+   ]
+  },
+  "us-gaap:FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:FinancingReceivableAllowanceForCreditLossExcludingAccruedInterestCurrent"
+   ]
+  },
+  "us-gaap:FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:FinancingReceivableAllowanceForCreditLossExcludingAccruedInterestNoncurrent"
+   ]
+  },
+  "us-gaap:FinancingReceivableExcludingAccruedInterestModifiedAccumulated": {
+   "inflow": [
+    "us-gaap:FinancingReceivableExcludingAccruedInterestModifiedPeriod",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestModifiedIncreaseDecreaseFromModification"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:FiniteLivedIntangibleAssetsAccumulatedAmortization": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:AmortizationOfIntangibleAssets"
+   ],
+   "contra": []
+  },
+  "us-gaap:FiniteLivedIntangibleAssetsGross": {
+   "inflow": [
+    "us-gaap:FiniteLivedIntangibleAssetsCostIncurredToRenewOrExtend"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:FiniteLivedIntangibleAssetsAccumulatedAmortization"
+   ]
+  },
+  "us-gaap:FiniteLivedIntangibleAssetsNet": {
+   "inflow": [
+    "us-gaap:FinitelivedIntangibleAssetsAcquired1",
+    "us-gaap:FiniteLivedIntangibleAssetsPurchaseAccountingAdjustments",
+    "us-gaap:FiniteLivedIntangibleAssetsTranslationAndPurchaseAccountingAdjustments",
+    "us-gaap:FiniteLivedIntangibleAssetsPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:FlightEquipmentGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:FlightEquipmentAccumulatedDepreciation"
+   ]
+  },
+  "us-gaap:Goodwill": {
+   "inflow": [
+    "us-gaap:GoodwillAcquiredDuringPeriod",
+    "us-gaap:GoodwillOtherIncreaseDecrease",
+    "us-gaap:GoodwillPurchaseAccountingAdjustments",
+    "us-gaap:GoodwillTranslationAndPurchaseAccountingAdjustments",
+    "us-gaap:GoodwillTransfers",
+    "us-gaap:GoodwillPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:GoodwillWrittenOffRelatedToSaleOfBusinessUnit",
+    "us-gaap:GoodwillSubsequentRecognitionOfDeferredTaxAsset"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:GoodwillGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:GoodwillImpairedAccumulatedImpairmentLoss"
+   ]
+  },
+  "us-gaap:GoodwillImpairedAccumulatedImpairmentLoss": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:GoodwillImpairmentLoss"
+   ],
+   "contra": []
+  },
+  "us-gaap:GovernmentAssistanceAmountCumulative": {
+   "inflow": [
+    "us-gaap:GovernmentAssistanceAssetIncrease"
+   ],
+   "outflow": [
+    "us-gaap:GovernmentAssistanceAssetDecrease"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:GovernmentAssistanceAmountCumulativeCurrent": {
+   "inflow": [
+    "us-gaap:GovernmentAssistanceAssetIncreaseCurrent"
+   ],
+   "outflow": [
+    "us-gaap:GovernmentAssistanceAssetDecreaseCurrent"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:GovernmentAssistanceAmountCumulativeNoncurrent": {
+   "inflow": [
+    "us-gaap:GovernmentAssistanceAssetIncreaseNoncurrent"
+   ],
+   "outflow": [
+    "us-gaap:GovernmentAssistanceAssetDecreaseNoncurrent"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:GovernmentAssistanceLiability": {
+   "inflow": [
+    "us-gaap:GovernmentAssistanceLiabilityIncrease"
+   ],
+   "outflow": [
+    "us-gaap:GovernmentAssistanceLiabilityDecrease"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:GovernmentAssistanceLiabilityCurrent": {
+   "inflow": [
+    "us-gaap:GovernmentAssistanceLiabilityIncreaseCurrent"
+   ],
+   "outflow": [
+    "us-gaap:GovernmentAssistanceLiabilityDecreaseCurrent"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:GovernmentAssistanceLiabilityNoncurrent": {
+   "inflow": [
+    "us-gaap:GovernmentAssistanceLiabilityIncreaseNoncurrent"
+   ],
+   "outflow": [
+    "us-gaap:GovernmentAssistanceLiabilityDecreaseNoncurrent"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:HeldToMaturitySecurities": {
+   "inflow": [
+    "us-gaap:DebtSecuritiesHeldToMaturityPurchase"
+   ],
+   "outflow": [
+    "us-gaap:DebtSecuritiesHeldToMaturitySale"
+   ],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLoss"
+   ]
+  },
+  "us-gaap:HeldToMaturitySecuritiesCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossCurrent"
+   ]
+  },
+  "us-gaap:HeldToMaturitySecuritiesNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:DebtSecuritiesHeldToMaturityAllowanceForCreditLossNoncurrent"
+   ]
+  },
+  "us-gaap:HostingArrangementServiceContractImplementationCostCapitalizedBeforeAccumulatedAmortization": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:HostingArrangementServiceContractImplementationCostCapitalizedAccumulatedAmortization"
+   ]
+  },
+  "us-gaap:IndefiniteLivedIntangibleAssetsExcludingGoodwill": {
+   "inflow": [
+    "us-gaap:IndefinitelivedIntangibleAssetsAcquired",
+    "us-gaap:IndefiniteLivedIntangibleAssetsPurchaseAccountingAdjustments",
+    "us-gaap:IndefiniteLivedIntangibleAssetsTranslationAndPurchaseAccountingAdjustments",
+    "us-gaap:IndefiniteLivedIntangibleAssetsPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:IndefiniteLivedIntangibleAssetsWrittenOffRelatedToSaleOfBusinessUnit"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:IntangibleAssetFiniteLivedAndCapitalizedCostSoftwareToBeSoldLeasedOrMarketedBeforeAccumulatedAmortization": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:IntangibleAssetFiniteLivedAndCapitalizedCostSoftwareToBeSoldLeasedOrMarketedAccumulatedAmortization"
+   ]
+  },
+  "us-gaap:InventoryGross": {
+   "inflow": [
+    "us-gaap:NoncashOrPartNoncashAcquisitionInventoryAcquired1"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:InventoryAdjustments",
+    "us-gaap:InventoryValuationReserves",
+    "us-gaap:InventoryLIFOReserve"
+   ]
+  },
+  "us-gaap:InventoryLIFOReserve": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:InventoryLIFOReserveEffectOnIncomeNet",
+    "us-gaap:InventoryLIFOReservePeriodCharge"
+   ],
+   "contra": []
+  },
+  "us-gaap:InventoryNet": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ProgressPaymentsNettedAgainstInventoryForLongTermContractsOrPrograms"
+   ]
+  },
+  "us-gaap:InventoryValuationReserves": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:InventoryWriteDown"
+   ],
+   "contra": []
+  },
+  "us-gaap:InvestmentOwnedAtFairValue": {
+   "inflow": [
+    "us-gaap:InvestmentsInAndAdvancesToAffiliatesAtFairValueGrossAdditions",
+    "us-gaap:InvestmentsInAndAdvancesToAffiliatesAtFairValuePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:InvestmentsInAndAdvancesToAffiliatesAtFairValueGrossReductions"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:Investments": {
+   "inflow": [
+    "us-gaap:TransferToInvestments",
+    "us-gaap:NoncashOrPartNoncashAcquisitionInvestmentsAcquired1"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:JointlyOwnedUtilityPlantGrossOwnershipAmountOfPlantInService": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:JointlyOwnedUtilityPlantOwnershipAmountOfPlantAccumulatedDepreciation"
+   ]
+  },
+  "us-gaap:LiabilitiesSubjectToCompromise": {
+   "inflow": [
+    "us-gaap:LiabilitiesSubjectToCompromiseIncreaseDecreaseUnderBankruptcyCourtOrderReclassifications",
+    "us-gaap:LiabilitiesSubjectToCompromisePeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LiabilityForAsbestosAndEnvironmentalClaimsGross": {
+   "inflow": [
+    "us-gaap:LiabilityForAsbestosAndEnvironmentalClaimsGrossPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LiabilityForAsbestosAndEnvironmentalClaimsNet": {
+   "inflow": [
+    "us-gaap:LiabilityForAsbestosAndEnvironmentalClaimsNetPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LiabilityForFuturePolicyBenefitExpectedFutureBenefitOriginalDiscountRateBeforeReinsuranceAfterCashFlowChange": {
+   "inflow": [
+    "us-gaap:LiabilityForFuturePolicyBenefitExpectedFuturePolicyBenefitIssuance"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LiabilityForFuturePolicyBenefitExpectedFuturePolicyBenefitOriginalDiscountRateBeforeCashFlowAndReinsurance": {
+   "inflow": [
+    "us-gaap:LiabilityForFuturePolicyBenefitExpectedFuturePolicyBenefitIncreaseDecreaseFromForeignCurrencyTranslation"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LiabilityForFuturePolicyBenefitExpectedNetPremiumOriginalDiscountRateBeforeCashFlowAndReinsurance": {
+   "inflow": [
+    "us-gaap:LiabilityForFuturePolicyBenefitExpectedNetPremiumIncreaseDecreaseFromForeignCurrencyTranslation"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LiabilityForFuturePolicyBenefitExpectedNetPremiumOriginalDiscountRateBeforeReinsuranceAfterCashFlowChange": {
+   "inflow": [],
+   "outflow": [
+    "us-gaap:LiabilityForFuturePolicyBenefitExpectedNetPremiumDerecognition"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseNet": {
+   "inflow": [
+    "us-gaap:LiabilityForUnpaidClaimsAndClaimsAdjustmentExpensePeriodIncreaseDecrease",
+    "us-gaap:LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseBusinessAcquisitions"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LineOfCredit": {
+   "inflow": [
+    "us-gaap:LineOfCreditFacilityIncreaseAccruedInterest",
+    "us-gaap:LineOfCreditFacilityIncreaseDecreaseForPeriodNet",
+    "us-gaap:LineOfCreditFacilityIncreaseDecreaseOtherNet"
+   ],
+   "outflow": [
+    "us-gaap:LineOfCreditFacilityDecreaseForgiveness1"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LoansReceivableHeldForSaleNetNotPartOfDisposalGroup": {
+   "inflow": [
+    "us-gaap:LoansReceivableHeldForSaleReconciliationToCashFlowAdditionsToHeldForSale",
+    "us-gaap:LoansReceivableHeldForSaleReconciliationToCashFlowPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:LoansReceivableHeldForSaleReconciliationToCashFlowDeductionsFromHeldForSale"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LossContingencyAccrualAtCarryingValue": {
+   "inflow": [
+    "us-gaap:LossContingencyAccrualCarryingValuePeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:LossContingencyAccrualProductLiabilityGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:LossContingencyAccrualProductLiabilityDiscount"
+   ]
+  },
+  "us-gaap:LossContingencyReceivable": {
+   "inflow": [
+    "us-gaap:LossContingencyRelatedReceivableCarryingValueAdditions",
+    "us-gaap:LossContingencyRelatedReceivableCarryingValuePeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:MalpracticeLossContingencyAccrualUndiscounted": {
+   "inflow": [
+    "us-gaap:MalpracticeLossContingencyPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:MarketRiskBenefitBeforeReinsuranceAndCumulativeIncreaseDecreaseFromInstrumentSpecificCreditRiskChange": {
+   "inflow": [
+    "us-gaap:MarketRiskBenefitPeriodIncreaseDecrease",
+    "us-gaap:MarketRiskBenefitIssuance"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:MineReclamationAndClosingLiabilityNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:ReclamationAndMineShutdownProvision"
+   ],
+   "contra": []
+  },
+  "us-gaap:MineralPropertiesGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:MineralPropertiesAccumulatedDepletion",
+    "us-gaap:MineralPropertiesAccumulatedImpairment"
+   ]
+  },
+  "us-gaap:MinorityInterest": {
+   "inflow": [
+    "us-gaap:NoncontrollingInterestIncreaseFromSubsidiaryEquityIssuance",
+    "us-gaap:NoncontrollingInterestIncreaseFromSaleOfParentEquityInterest",
+    "us-gaap:NoncontrollingInterestIncreaseFromBusinessCombination",
+    "us-gaap:MinorityInterestPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:MinorityInterestDecreaseFromDistributionsToNoncontrollingInterestHolders",
+    "us-gaap:MinorityInterestDecreaseFromRedemptions",
+    "us-gaap:NoncontrollingInterestDecreaseFromDeconsolidation"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:MortgageLoansOnRealEstate": {
+   "inflow": [
+    "us-gaap:MortgageLoansOnRealEstateNewMortgageLoans",
+    "us-gaap:MortgageLoansOnRealEstateOtherAdditions",
+    "us-gaap:MortgageLoansOnRealEstatePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "srt:MortgageLoansOnRealEstateCollectionsOfPrincipal",
+    "us-gaap:MortgageLoansOnRealEstateForeclosures",
+    "us-gaap:MortgageLoansOnRealEstateCostOfMortgagesSold",
+    "us-gaap:MortgageLoansOnRealEstateAmortizationOfPremium",
+    "us-gaap:MortgageLoansOnRealEstateOtherDeductions"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:MultiemployerPlanPensionInsignificantPlanAsset": {
+   "inflow": [
+    "us-gaap:MultiemployerPlanPensionInsignificantPlanContribution"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:MultiemployerPlanPensionSignificantPlanAsset": {
+   "inflow": [
+    "us-gaap:MultiemployerPlanPensionSignificantPlanContribution"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:NetInvestmentInLease": {
+   "inflow": [
+    "us-gaap:NetInvestmentInLeasePurchase"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:NetInvestmentInLeaseAllowanceForCreditLoss"
+   ]
+  },
+  "us-gaap:NetInvestmentInLeaseAllowanceForCreditLoss": {
+   "inflow": [
+    "us-gaap:NetInvestmentInLeaseAllowanceForCreditLossRecovery",
+    "us-gaap:NetInvestmentInLeaseAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:NetInvestmentInLeaseAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:NetInvestmentInLeaseExcludingAccruedInterestBeforeAllowanceForCreditLoss": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:NetInvestmentInLeaseAllowanceForCreditLossExcludingAccruedInterest"
+   ]
+  },
+  "us-gaap:NetInvestmentInLeaseExcludingAccruedInterestBeforeAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:NetInvestmentInLeaseAllowanceForCreditLossExcludingAccruedInterestCurrent"
+   ]
+  },
+  "us-gaap:NetInvestmentInLeaseExcludingAccruedInterestBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:NetInvestmentInLeaseAllowanceForCreditLossExcludingAccruedInterestNoncurrent"
+   ]
+  },
+  "us-gaap:NetInvestmentInLeaseNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:NetInvestmentInLeaseAllowanceForCreditLossNoncurrent"
+   ]
+  },
+  "us-gaap:NoncurrentAssets": {
+   "inflow": [
+    "us-gaap:SegmentExpenditureAdditionToLongLivedAssets"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:NotesAndLoansReceivableGrossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AllowanceForNotesAndLoansReceivableCurrent"
+   ]
+  },
+  "us-gaap:NotesAndLoansReceivableGrossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AllowanceForNotesAndLoansReceivableNoncurrent"
+   ]
+  },
+  "us-gaap:NotesPayable": {
+   "inflow": [
+    "us-gaap:NotesIssued1"
+   ],
+   "outflow": [
+    "us-gaap:NotesReduction"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:NotesReceivableGross": {
+   "inflow": [
+    "us-gaap:FinancingReceivableSignificantPurchases"
+   ],
+   "outflow": [
+    "us-gaap:FinancingReceivableSale",
+    "us-gaap:FinancingReceivableSignificantSales"
+   ],
+   "accrual": [],
+   "contra": [
+    "us-gaap:FinancingReceivableAllowanceForCreditLosses",
+    "us-gaap:AllowanceForLoanAndLeaseLossesRealEstate"
+   ]
+  },
+  "us-gaap:OilAndGasPropertyFullCostMethodGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:OilAndGasPropertyFullCostMethodDepletion"
+   ]
+  },
+  "us-gaap:OilAndGasPropertySuccessfulEffortMethodGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:OilAndGasPropertySuccessfulEffortMethodAccumulatedDepreciationDepletionAmortizationAndImpairment",
+    "us-gaap:OilAndGasPropertySuccessfulEffortMethodAccumulatedDepreciationDepletionAndAmortization",
+    "us-gaap:OilAndGasPropertySuccessfulEffortMethodAccumulatedImpairment"
+   ]
+  },
+  "us-gaap:OperatingLeaseRightOfUseAsset": {
+   "inflow": [
+    "us-gaap:RightOfUseAssetObtainedInExchangeForOperatingLeaseLiability"
+   ],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:OperatingLeaseRightOfUseAssetAmortizationExpense"
+   ],
+   "contra": []
+  },
+  "us-gaap:OtherAssets": {
+   "inflow": [
+    "us-gaap:AdditionsToOtherAssetsAmount",
+    "us-gaap:NoncashOrPartNoncashAcquisitionOtherAssetsAcquired1"
+   ],
+   "outflow": [
+    "us-gaap:ReductionsInOtherAssetsAmount"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:OtherDeferredCostsGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AccumulatedAmortizationOfOtherDeferredCosts"
+   ]
+  },
+  "us-gaap:OtherRealEstate": {
+   "inflow": [
+    "us-gaap:OtherRealEstateAdditions",
+    "us-gaap:OtherRealEstateImprovements",
+    "us-gaap:OtherRealEstatePeriodIncreaseDecrease",
+    "us-gaap:TransferToOtherRealEstate"
+   ],
+   "outflow": [
+    "us-gaap:OtherRealEstateDisposals",
+    "us-gaap:OtherRealEstateValuationAdjustments"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:OtherRealEstateCovered": {
+   "inflow": [
+    "us-gaap:OtherRealEstateCoveredAdditions",
+    "us-gaap:OtherRealEstateCoveredImprovements",
+    "us-gaap:OtherRealEstateCoveredPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:OtherRealEstateCoveredDisposals",
+    "us-gaap:OtherRealEstateCoveredValuationAdjustments"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:OtherRealEstateNonCovered": {
+   "inflow": [
+    "us-gaap:OtherRealEstateNonCoveredAdditions",
+    "us-gaap:OtherRealEstateNonCoveredImprovements",
+    "us-gaap:OtherRealEstateNonCoveredPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:OtherRealEstateNonCoveredDisposals",
+    "us-gaap:OtherRealEstateNonCoveredValuationAdjustments"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:OtherReceivableBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:OtherReceivableAllowanceForCreditLossNoncurrent"
+   ]
+  },
+  "us-gaap:OtherReceivablesGrossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AllowanceForDoubtfulOtherReceivablesCurrent"
+   ]
+  },
+  "us-gaap:PartnersCapital": {
+   "inflow": [
+    "us-gaap:ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest",
+    "us-gaap:PartnersCapitalAccountContributions",
+    "us-gaap:PartnersCapitalAccountAcquisitions",
+    "us-gaap:PartnersCapitalAccountOptionExercise",
+    "us-gaap:PartnersCapitalAccountUnitBasedCompensation",
+    "us-gaap:PartnersCapitalAccountSaleOfUnits",
+    "us-gaap:PartnersCapitalAccountPrivatePlacementOfUnits",
+    "us-gaap:PartnersCapitalAccountPublicSaleOfUnits",
+    "us-gaap:PartnersCapitalAccountExchangesAndConversions",
+    "us-gaap:PartnersCapitalAccountTreasuryUnitsReissued",
+    "us-gaap:PartnersCapitalOther",
+    "us-gaap:PartnersCapitalAccountPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:PartnersCapitalAccountDistributions",
+    "us-gaap:GeneralPartnersCapitalAccountDistributionAmount",
+    "us-gaap:LimitedPartnersCapitalAccountDistributionAmount",
+    "us-gaap:IncentiveDistributionDistributionPerYear",
+    "us-gaap:PartnersCapitalAccountReturnOfCapital",
+    "us-gaap:PartnersCapitalAccountDeferredCompensation",
+    "us-gaap:PartnersCapitalAccountRedemptions",
+    "us-gaap:PartnersCapitalAccountTreasuryUnitsPurchases"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:PartnersCapitalAccountUnits": {
+   "inflow": [
+    "us-gaap:PartnersCapitalAccountUnitsAcquisitions",
+    "us-gaap:PartnersCapitalAccountUnitsContributed",
+    "us-gaap:PartnersCapitalAccountUnitsConverted",
+    "us-gaap:PartnersCapitalAccountUnitsSoldInPrivatePlacement",
+    "us-gaap:PartnersCapitalAccountUnitsSoldInPublicOffering",
+    "us-gaap:PartnersCapitalAccountUnitsSaleOfUnits",
+    "us-gaap:PartnersCapitalAccountUnitsTreasuryUnitsReissued",
+    "us-gaap:PartnersCapitalAccountUnitsUnitbasedCompensation"
+   ],
+   "outflow": [
+    "us-gaap:PartnersCapitalAccountUnitsRedeemed",
+    "us-gaap:PartnersCapitalAccountUnitsTreasury"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:PhaseInPlanAmountOfCostsDeferredForRateMakingPurposes": {
+   "inflow": [
+    "us-gaap:PhaseInPlanNetChangeInAmountOfCostsDeferredForRateMakingPurposes"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:PolicyholderFunds": {
+   "inflow": [
+    "us-gaap:PolicyholderAccountBalanceIssuance",
+    "us-gaap:PolicyholderAccountBalanceIncreaseDecreaseFromOtherChange",
+    "us-gaap:TransferToFromPolicyholderAccountBalanceToFromSeparateAccount",
+    "us-gaap:PolicyholderAccountBalancePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:PolicyholderAccountBalancePolicyCharge",
+    "us-gaap:PolicyholderAccountBalanceSurrender",
+    "us-gaap:PolicyholderAccountBalanceWithdrawal",
+    "us-gaap:PolicyholderAccountBalanceSurrenderAndWithdrawal"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:PremiumsReceivableAllowanceForDoubtfulAccounts": {
+   "inflow": [
+    "us-gaap:PremiumsReceivableAllowanceForDoubtfulAccountsRecoveries",
+    "us-gaap:PremiumsReceivableAllowanceForDoubtfulAccountsPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:PremiumsReceivableAllowanceForDoubtfulAccountsWriteOffsAgainstAllowance"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:PremiumsReceivableGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:PremiumsReceivableAllowanceForDoubtfulAccounts"
+   ]
+  },
+  "us-gaap:PresentValueOfFutureInsuranceProfitsAccumulatedAmortization": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:AmortizationOfValueOfBusinessAcquiredVOBA"
+   ],
+   "contra": []
+  },
+  "us-gaap:PresentValueOfFutureInsuranceProfitsGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:PresentValueOfFutureInsuranceProfitsAccumulatedAmortization"
+   ]
+  },
+  "us-gaap:ProductWarrantyAccrual": {
+   "inflow": [
+    "us-gaap:ProductWarrantyAccrualWarrantiesIssued",
+    "us-gaap:StandardProductWarrantyAccrualWarrantiesIssued",
+    "us-gaap:ExtendedProductWarrantyAccrualWarrantiesIssued",
+    "us-gaap:ProductWarrantyAccrualPreexistingIncreaseDecrease",
+    "us-gaap:StandardProductWarrantyAccrualPreexistingIncreaseDecrease",
+    "us-gaap:ExtendedProductWarrantyAccrualPreexistingIncreaseDecrease",
+    "us-gaap:ProductWarrantyAccrualAdditionsFromBusinessAcquisition",
+    "us-gaap:StandardProductWarrantyAccrualAdditionsFromBusinessAcquisition",
+    "us-gaap:ExtendedProductWarrantyAccrualAdditionsFromBusinessAcquisition",
+    "us-gaap:ProductWarrantyAccrualPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ProductWarrantyAccrualPayments",
+    "us-gaap:StandardProductWarrantyAccrualPayments",
+    "us-gaap:ExtendedProductWarrantyAccrualPayments"
+   ],
+   "accrual": [
+    "us-gaap:ProductWarrantyExpense"
+   ],
+   "contra": []
+  },
+  "us-gaap:PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetBeforeAccumulatedDepreciationAndAmortization": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAccumulatedDepreciationAndAmortization"
+   ]
+  },
+  "us-gaap:PropertyPlantAndEquipmentExcludingLessorAssetUnderOperatingLeaseBeforeAccumulatedDepreciation": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:PropertyPlantAndEquipmentExcludingLessorAssetUnderOperatingLeaseAccumulatedDepreciation"
+   ]
+  },
+  "us-gaap:PropertyPlantAndEquipmentGross": {
+   "inflow": [
+    "us-gaap:PropertyPlantAndEquipmentAdditions",
+    "us-gaap:PropertyPlantAndEquipmentTransfersAndChanges",
+    "us-gaap:PropertyPlantAndEquipmentGrossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:PropertyPlantAndEquipmentDisposals"
+   ],
+   "accrual": [],
+   "contra": [
+    "us-gaap:AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment"
+   ]
+  },
+  "us-gaap:PropertyPlantAndEquipmentOwnedGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:PropertyPlantAndEquipmentOwnedAccumulatedDepreciation"
+   ]
+  },
+  "us-gaap:PropertySubjectToOrAvailableForOperatingLeaseGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:PropertySubjectToOrAvailableForOperatingLeaseAccumulatedDepreciation"
+   ]
+  },
+  "us-gaap:PublicUtilitiesPropertyPlantAndEquipmentPlantInService": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:PublicUtilitiesPropertyPlantAndEquipmentAccumulatedDepreciation"
+   ]
+  },
+  "us-gaap:RealEstateAccumulatedDepreciation": {
+   "inflow": [
+    "us-gaap:RealEstateAccumulatedDepreciationOtherAdditions",
+    "us-gaap:RealEstateAccumulatedDepreciationPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:RealEstateAccumulatedDepreciationRealEstateSold",
+    "us-gaap:RealEstateAccumulatedDepreciationOtherDeductions"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:RealEstateAssetsHeldForDevelopmentAndSale": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:RealEstateLiabilitiesAssociatedWithAssetsHeldForDevelopmentAndSale"
+   ]
+  },
+  "us-gaap:RealEstateGrossAtCarryingValue": {
+   "inflow": [
+    "us-gaap:RealEstateAcquisitionsThroughForeclosures",
+    "us-gaap:RealEstateOtherAcquisitions",
+    "us-gaap:RealEstateImprovements",
+    "us-gaap:RealEstateOtherAdditions",
+    "us-gaap:RealEstatePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:RealEstateCostOfRealEstateSold",
+    "us-gaap:RealEstateOtherDeductions"
+   ],
+   "accrual": [],
+   "contra": [
+    "us-gaap:RealEstateAccumulatedDepreciation"
+   ]
+  },
+  "us-gaap:RealEstateInventoryCapitalizedInterestCosts": {
+   "inflow": [
+    "us-gaap:RealEstateInventoryCapitalizedInterestCostsIncurred",
+    "us-gaap:RealEstateInventoryCapitalizedInterestCostsPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:RealEstateInvestmentPropertyAtCost": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:RealEstateInvestmentPropertyAccumulatedDepreciation"
+   ]
+  },
+  "us-gaap:RealEstateOwnedValuationAllowance": {
+   "inflow": [
+    "us-gaap:RealEstateOwnedValuationAllowancePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:RealEstateOwnedValuationAllowanceAmountsApplied"
+   ],
+   "accrual": [
+    "us-gaap:RealEstateOwnedValuationAllowanceProvision1"
+   ],
+   "contra": []
+  },
+  "us-gaap:RecordedThirdPartyEnvironmentalRecoveriesUndiscounted": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:RecordedThirdPartyEnvironmentalRecoveriesDiscount"
+   ]
+  },
+  "us-gaap:ReinsuranceRecoverablesAllowance": {
+   "inflow": [
+    "us-gaap:ReinsuranceRecoverableAllowanceForCreditLossRecovery",
+    "us-gaap:ReinsuranceRecoverableAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ReinsuranceLossOnUncollectibleAccountsInPeriodAmount"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ReinsuranceRecoverablesGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ReinsuranceRecoverablesAllowance"
+   ]
+  },
+  "us-gaap:ReinsuranceRecoverablesOnPaidLossesGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ReinsuranceRecoverablesOnPaidLossesAllowance"
+   ]
+  },
+  "us-gaap:ReinsuranceRecoverablesOnUnpaidLossesGross": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:ReinsuranceRecoverablesOnUnpaidLossesAllowance"
+   ]
+  },
+  "us-gaap:ReorganizationValue": {
+   "inflow": [
+    "us-gaap:ReorganizationItems"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:RestructuringAndRelatedCostCostIncurredToDate1": {
+   "inflow": [
+    "us-gaap:RestructuringCosts"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:RestructuringReserve": {
+   "inflow": [
+    "us-gaap:RestructuringReservePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:RestructuringReserveSettledWithoutCash2"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:RetainedEarningsAccumulatedDeficit": {
+   "inflow": [
+    "us-gaap:DebtSecuritiesTradingUnrealizedGainLoss",
+    "us-gaap:HeldtomaturitySecuritiesTransferredToTradingSecuritiesUnrealizedGainLossExcludingOtherThanTemporaryImpairments",
+    "us-gaap:DeferredPolicyAcquisitionCostForeignCurrencyTranslationGainLoss",
+    "us-gaap:PresentValueOfFutureInsuranceProfitsForeignCurrencyTranslationGainLoss",
+    "us-gaap:DeferredSalesInducementCostForeignCurrencyTranslationGainLoss",
+    "us-gaap:DeferredPolicyAcquisitionCostsAndPresentValueOfFutureInsuranceProfitsForeignCurrencyTranslationGainLoss",
+    "us-gaap:ExtendedProductWarrantyAccrualForeignCurrencyTranslationGainLoss",
+    "us-gaap:StandardAndExtendedProductWarrantyAccrualForeignCurrencyTranslationGainLoss",
+    "us-gaap:StandardProductWarrantyAccrualForeignCurrencyTranslationGainLoss",
+    "us-gaap:DefinedBenefitPlanActuarialGainLoss",
+    "us-gaap:RealEstateOwnedValuationAllowanceValuationIncrease",
+    "us-gaap:RestructuringReserveTranslationAdjustment",
+    "us-gaap:ServicingLiabilityAtAmortizedCostAmortization",
+    "us-gaap:FinancingReceivableTransferToHeldForSaleAllowanceForCreditLossExpenseReversal",
+    "us-gaap:FinancingReceivableAllowanceForCreditLossForeignCurrencyTranslation",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationGainLossIncludedInEarnings",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationGainLossIncludedInOtherComprehensiveIncomeLoss",
+    "us-gaap:DebtSecuritiesHeldToMaturityTransferToAvailableForSaleAllowanceForCreditLossExpenseReversal",
+    "us-gaap:DebtSecuritiesAvailableForSaleTransferToHeldToMaturityAllowanceForCreditLossExpenseReversal",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestAllowanceForCreditLossForeignCurrencyTranslation",
+    "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestTransferToAvailableForSaleAllowanceForCreditLossExpenseReversal",
+    "us-gaap:DebtSecuritiesAvailableForSaleExcludingAccruedInterestTransferToHeldToMaturityAllowanceForCreditLossExpenseReversal",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestTransferToHeldForSaleAllowanceForCreditLossExpenseReversal",
+    "us-gaap:GainsLossesOnRestructuringOfDebt",
+    "us-gaap:GainLossOnRepurchaseOfDebtInstrument",
+    "us-gaap:IncomeLossFromAffordableHousingProjectsEquityMethodInvestments",
+    "us-gaap:EmployeeServiceShareBasedCompensationTaxBenefitFromCompensationExpense",
+    "us-gaap:IncomeTaxExpenseBenefitContinuingOperationsGovernmentGrants",
+    "us-gaap:AffordableHousingTaxCreditsAndOtherTaxBenefitsAmount",
+    "us-gaap:DirectFinancingLeaseRevenue",
+    "us-gaap:DirectFinancingLeaseVariableLeaseIncome",
+    "us-gaap:DirectFinancingLeaseInterestIncome",
+    "us-gaap:SalesTypeLeaseRevenue",
+    "us-gaap:SalesTypeLeaseVariableLeaseIncome",
+    "us-gaap:SalesTypeLeaseInterestIncome",
+    "us-gaap:OperatingLeaseLeaseIncome",
+    "us-gaap:SubleaseIncome",
+    "us-gaap:GainLossOnInterestRateDerivativeInstrumentsNotDesignatedAsHedgingInstruments",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationRentalIncome",
+    "us-gaap:SaleOfTrustAssetsToPayExpenses",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationForeignCurrencyTranslationGainsLosses",
+    "us-gaap:InsuranceCommissionsAndFees",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationInterestIncome",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationOtherIncome",
+    "us-gaap:ContractuallySpecifiedServicingFeesAmount",
+    "us-gaap:DiscontinuedOperationGainLossFromDisposalOfDiscontinuedOperationBeforeIncomeTax",
+    "us-gaap:LateFeeIncomeGeneratedByServicingFinancialAssetsAmount",
+    "us-gaap:DiscontinuedOperationAmountOfAdjustmentToPriorPeriodGainLossOnDisposalBeforeIncomeTax",
+    "us-gaap:AncillaryFeeIncomeGeneratedByServicingFinancialAssetsAmount",
+    "us-gaap:DiscontinuedOperationTaxExpenseBenefitFromProvisionForGainLossOnDisposal",
+    "us-gaap:InsuranceAgencyManagementFee",
+    "us-gaap:GainLossOnSecuritizationOfFinancialAssets",
+    "us-gaap:DebtSecuritiesTradingRealizedGainLoss",
+    "us-gaap:DebtSecuritiesAvailableForSaleRealizedGainLoss",
+    "us-gaap:HeldtomaturitySecuritiesSoldSecurityRealizedGainLossExcludingOtherThanTemporaryImpairments",
+    "us-gaap:EquitySecuritiesFvNiRealizedGainLoss",
+    "us-gaap:GainLossOnSalesOfConsumerLoans",
+    "us-gaap:GainLossOnSaleOfMortgageLoans",
+    "us-gaap:GainLossOnSalesOfMortgageBackedSecuritiesMBS",
+    "us-gaap:GainLossOnSaleOfInsuranceBlock",
+    "us-gaap:GainLossOnSaleOfDerivatives",
+    "us-gaap:GainsLossesOnSalesOfCreditCardPortfolio",
+    "us-gaap:GainLossOnDispositionOfOtherFinancialAssets",
+    "us-gaap:PremiumsEarnedNet",
+    "us-gaap:InterestAndFeeIncomeLoansHeldForSaleMortgages",
+    "us-gaap:UnusualOrInfrequentItemInsuranceProceeds",
+    "us-gaap:InterestAndFeeIncomeNonmortgageLoansAndLeasesHeldForSale",
+    "us-gaap:InterestAndFeeIncomeOtherLoansHeldForSale",
+    "us-gaap:InterestAndFeeIncomeLoansCommercialIndustrialAndAgriculturalLoans",
+    "us-gaap:InterestAndFeeIncomeLoansCommercialAndResidentialRealEstate",
+    "us-gaap:InterestAndFeeIncomeLoansCommercialRealEstate",
+    "us-gaap:InterestAndFeeIncomeLoansRealEstateConstruction",
+    "us-gaap:InterestAndFeeIncomeLoansTradeFinancing",
+    "us-gaap:InterestAndFeeIncomeLoansLeaseFinancing",
+    "us-gaap:InterestAndFeeIncomeLoansConsumerRealEstate",
+    "us-gaap:InterestAndFeeIncomeLoansConsumerHomeEquity",
+    "us-gaap:InterestAndFeeIncomeLoansConsumerInstallmentAutomobilesMarineAndOtherVehicles",
+    "us-gaap:InterestAndFeeIncomeLoansConsumerInstallmentCreditCard",
+    "us-gaap:InterestAndFeeIncomeLoansOtherConsumer",
+    "us-gaap:InterestAndFeeIncomeLoansForeign",
+    "us-gaap:AmortizationOfDeferredLoanOriginationFeesNet",
+    "us-gaap:InterestAndFeeIncomeOtherLoans",
+    "us-gaap:InterestIncomeAndFeesBankersAcceptancesCertificatesOfDepositAndCommercialPaper",
+    "us-gaap:InterestIncomePurchasedReceivables",
+    "us-gaap:InterestIncomeMoneyMarketDeposits",
+    "us-gaap:InterestIncomeOtherDomesticDeposits",
+    "us-gaap:InterestIncomeForeignDeposits",
+    "us-gaap:InterestIncomeFederalFundsSold",
+    "us-gaap:InterestIncomeSecuritiesPurchasedUnderAgreementsToResell",
+    "us-gaap:InterestIncomeSecuritiesTaxable",
+    "us-gaap:InterestIncomeSecuritiesTaxExempt",
+    "us-gaap:GainLossOnDerivativeInstrumentsHeldForTradingPurposesNet",
+    "us-gaap:InterestIncomeSecuritiesTaxAdvantaged",
+    "us-gaap:DividendIncomeSecuritiesOperatingTaxable",
+    "us-gaap:DividendIncomeSecuritiesOperatingTaxExempt",
+    "us-gaap:DividendIncomeSecuritiesOperatingTaxAdvantaged",
+    "us-gaap:OtherInterestAndDividendIncome",
+    "us-gaap:InsuranceInvestmentIncome",
+    "us-gaap:RealizedInvestmentGainsLosses",
+    "us-gaap:BrokerageCommissionsRevenue",
+    "us-gaap:InvestmentBankingRevenue",
+    "us-gaap:UnderwritingIncomeLoss",
+    "us-gaap:TradingActivityGain",
+    "us-gaap:PrincipalInvestmentGainsLosses",
+    "us-gaap:MarketDataRevenue",
+    "us-gaap:OtherOperatingIncome",
+    "us-gaap:FeeIncome",
+    "us-gaap:OtherIncome",
+    "us-gaap:RecoveryOfDirectCosts",
+    "us-gaap:ReinsuranceEffectOnClaimsAndBenefitsIncurredAmountCeded",
+    "us-gaap:MerchantMarineOperatingDifferentialSubsidy",
+    "us-gaap:DefinedBenefitPlanRecognizedNetGainLossDueToSettlements1",
+    "us-gaap:GainOnBusinessInterruptionInsuranceRecovery",
+    "us-gaap:EnvironmentalCostsRecognizedRecoveryCreditedToExpense",
+    "us-gaap:BusinessCombinationBargainPurchaseGainRecognizedAmount",
+    "us-gaap:GainLossOnOilAndGasHedgingActivity",
+    "us-gaap:MalpracticeLossContingencyReturnOfPremiums",
+    "us-gaap:MalpracticeLossContingencyInsuranceRecoveries",
+    "us-gaap:InsuranceRecoveries",
+    "us-gaap:GainLossFromPriceRiskManagementActivity",
+    "us-gaap:GainLossOnSaleOfProvedProperty",
+    "us-gaap:GainLossOnSaleOfUnprovedProperty",
+    "us-gaap:GainLossOnSaleOfTimberProperty",
+    "us-gaap:GainLossOnDispositionOfAssets",
+    "us-gaap:GainLossOnSaleOfBusiness",
+    "us-gaap:SaleAndLeasebackTransactionGainLossNet",
+    "us-gaap:GainLossOnDispositionOfIntangibleAssets",
+    "us-gaap:GainLossOnTerminationOfLease",
+    "us-gaap:GainLossOnSaleOfOtherAssets",
+    "us-gaap:NoninterestIncomeOtherOperatingIncome",
+    "us-gaap:OtherNonrecurringIncome",
+    "us-gaap:GainLossOnSaleOfInterestInProjects",
+    "us-gaap:PhaseInPlanAmountOfCapitalizedCostsRecovered",
+    "us-gaap:GainLossOnInvestments",
+    "us-gaap:VentureCapitalGainsLossesNet",
+    "us-gaap:GainOrLossOnSaleOfPreviouslyUnissuedStockByEquityInvestee",
+    "us-gaap:DisposalGroupNotDiscontinuedOperationGainLossOnDisposal",
+    "us-gaap:OtherNonoperatingGainsLosses",
+    "us-gaap:RoyaltyIncomeNonoperating",
+    "us-gaap:RentalIncomeNonoperating",
+    "us-gaap:DevelopmentProfitsNonoperating",
+    "us-gaap:GainOrLossOnSaleOfPreviouslyUnissuedStockBySubsidiary",
+    "us-gaap:LeveragedLeasesIncomeStatementIncomeFromLeveragedLeases",
+    "us-gaap:LeveragedLeasesIncomeStatementInvestmentTaxCreditRecognizedOnLeveragedLeases",
+    "us-gaap:InterestIncomeHedgeBasisAdjustmentPortfolioLayerMethod",
+    "us-gaap:InvestmentIncomeDividend",
+    "us-gaap:InvestmentIncomeAmortizationOfDiscount",
+    "us-gaap:GainLossOnContractTermination",
+    "us-gaap:GainLossOnCondemnation",
+    "us-gaap:PublicUtilitiesAllowanceForFundsUsedDuringConstructionAdditions",
+    "us-gaap:ForeignCurrencyTransactionGainLossRealized",
+    "us-gaap:DeconsolidationGainOrLossAmount",
+    "us-gaap:ForeignCurrencyTransactionGainLossUnrealized",
+    "us-gaap:GainLossOnSaleOfLeasedAssetsNetOperatingLeases",
+    "us-gaap:GainsLossesOnSalesOfOtherRealEstate",
+    "us-gaap:BankOwnedLifeInsuranceIncome",
+    "us-gaap:RealEstateInvestmentPartnershipRevenue",
+    "us-gaap:ConversionGainsAndLossesOnForeignInvestments",
+    "us-gaap:GainOrLossOnSaleOfStockInSubsidiary",
+    "us-gaap:DebtInstrumentConvertibleBeneficialConversionFeature",
+    "us-gaap:PublicUtilitiesAllowanceForFundsUsedDuringConstructionCapitalizedCostOfEquity",
+    "us-gaap:OtherNonoperatingAssetRelatedIncome",
+    "us-gaap:DiscontinuedApplicationOfSpecializedAccountingForRegulatedOperations",
+    "us-gaap:UnusualOrInfrequentItemGainGross",
+    "us-gaap:EquityMethodInvestmentRealizedGainLossOnDisposal",
+    "us-gaap:GainsLossesOnExtinguishmentOfDebtBeforeWriteOffOfDeferredDebtIssuanceCost",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationRevenue",
+    "us-gaap:DividendIncomeOperating",
+    "us-gaap:InvestmentIncomeInterest",
+    "us-gaap:InvestmentIncomeInterestAndDividend",
+    "us-gaap:InvestmentIncomeNet",
+    "us-gaap:InvestmentIncomeNonoperating",
+    "us-gaap:GainsLossesOnExtinguishmentOfDebt",
+    "us-gaap:NetInvestmentIncome",
+    "us-gaap:NonoperatingGainsLosses",
+    "us-gaap:InterestAndFeeIncomeLoansAndLeases",
+    "us-gaap:InterestAndFeeIncomeLoansAndLeasesHeldForSale",
+    "us-gaap:RevenuesExcludingInterestAndDividends",
+    "us-gaap:LeveragedLeasesIncomeStatementNetIncomeFromLeveragedLeases",
+    "us-gaap:InterestAndFeeIncomeLoansAndLeasesHeldInPortfolio",
+    "us-gaap:InterestAndFeeIncomeLoansCommercial",
+    "us-gaap:PrincipalTransactionsRevenue",
+    "us-gaap:TradingGainsLosses",
+    "us-gaap:Revenues",
+    "us-gaap:InterestAndFeeIncomeLoansConsumer",
+    "us-gaap:ReinsuranceCostsAndRecoveriesNet",
+    "us-gaap:DerivativeInstrumentsNotDesignatedAsHedgingInstrumentsGainLossNet",
+    "us-gaap:GainLossRelatedToLitigationSettlement",
+    "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+    "us-gaap:ContractuallySpecifiedServicingFeesLateFeesAndAncillaryFeesEarnedInExchangeForServicingFinancialAssets",
+    "us-gaap:IncomeLossFromEquityMethodInvestments",
+    "us-gaap:OtherOperatingIncomeExpenseNet",
+    "us-gaap:GainLossOnDispositionOfAssets1",
+    "us-gaap:GainLossOnSaleOfPropertyPlantEquipment",
+    "us-gaap:GainLossOnSaleOfPreviouslyUnissuedStockBySubsidiaryOrEquityInvesteeNonoperatingIncome",
+    "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+    "us-gaap:GainLossOnSaleOfProperty",
+    "us-gaap:InterestIncomeDepositsWithFinancialInstitutions",
+    "us-gaap:GainsLossesOnSalesOfAssets",
+    "us-gaap:InterestIncomeDomesticDeposits",
+    "us-gaap:GainLossOnSaleOfOilAndGasProperty",
+    "us-gaap:OtherNonoperatingIncome",
+    "us-gaap:DebtAndEquitySecuritiesRealizedGainLoss",
+    "us-gaap:DebtSecuritiesRealizedGainLoss",
+    "us-gaap:InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell",
+    "us-gaap:GainLossOnSaleOfStockInSubsidiaryOrEquityMethodInvestee",
+    "us-gaap:InterestIncomeOperating",
+    "us-gaap:GainLossOnSalesOfLoansNet",
+    "us-gaap:OtherNonoperatingIncomeExpense",
+    "us-gaap:InvestmentIncomeNetAmortizationOfDiscountAndPremium",
+    "us-gaap:GainOnDerivativeInstrumentsPretax",
+    "us-gaap:NoninterestIncomeOther",
+    "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+    "us-gaap:RevenueNotFromContractWithCustomerExcludingInterestIncome",
+    "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+    "us-gaap:ForeignCurrencyTransactionGainBeforeTax",
+    "us-gaap:DirectPremiumsEarned",
+    "us-gaap:AssumedPremiumsEarned",
+    "us-gaap:ContractWithCustomerLiabilityRevenueRecognized",
+    "us-gaap:UnrealizedGainOnForeignCurrencyDerivativesBeforeTax",
+    "us-gaap:GainLossOnForeignCurrencyDerivativesRecordedInEarningsNet",
+    "us-gaap:InvestmentCompanyGainLossOnInKindRedemption",
+    "us-gaap:GainRecognizedOnAssetsTransferredToSeparateAccountGross",
+    "us-gaap:GainLossOnSaleOfNotesReceivable",
+    "us-gaap:FairValueLiabilityRecurringBasisStillHeldUnrealizedGainLossOci",
+    "us-gaap:InvestmentCompanyGainOnInvestmentInViolation",
+    "us-gaap:ForeignCurrencyTransactionGainLossExcludingInvestmentPriceChangeAfterTax",
+    "us-gaap:GainLossOnSaleOfTrustAssetsToPayExpenses",
+    "us-gaap:GainLossOnPriceRiskDerivativeInstrumentsNotDesignatedAsHedgingInstruments",
+    "us-gaap:GainLossFromComponentsExcludedFromAssessmentOfFairValueHedgeEffectivenessNet",
+    "us-gaap:GainLossFromHedgedFirmCommitmentNotQualifyingAsFairValueHedgeNet",
+    "us-gaap:GainLossFromComponentsExcludedFromAssessmentOfCashFlowHedgeEffectivenessNet",
+    "us-gaap:EquitySecuritiesFvNiRealizedGain",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityGainLossIncludedInEarnings",
+    "us-gaap:DebtAndEquitySecuritiesGainLoss",
+    "us-gaap:DebtSecuritiesAvailableForSaleGainLoss",
+    "us-gaap:LitigationSettlementGain",
+    "us-gaap:DerivativeExcludedComponentGainRecognizedInEarnings",
+    "us-gaap:DeconsolidationRevaluationOfRetainedInvestmentGainOrLossAmount",
+    "us-gaap:ForeignCurrencyTransactionGainLossUnrealizedAfterTax",
+    "us-gaap:GainLossOnFairValueHedgesRecognizedInEarnings",
+    "us-gaap:FairValueAssetLiabilityRecurringBasisStillHeldUnrealizedGainLossOci",
+    "us-gaap:DerivativeFairValueHedgeIncludedInEffectivenessGainLoss",
+    "us-gaap:UnrealizedGainLossInvestmentDerivativeAndForeignCurrencyTransactionPriceChangeOperatingAfterTax",
+    "us-gaap:GainLossOnSaleOfProperties",
+    "us-gaap:ForeignCurrencyTransactionGainLossRealizedExcludingInvestmentPriceChangeAfterTax",
+    "us-gaap:DebtAndEquitySecuritiesUnrealizedGainLoss",
+    "us-gaap:GainLossOnSaleOfLoansAndLeases",
+    "us-gaap:FairValueAssetRecurringBasisStillHeldUnrealizedGainLossOci",
+    "us-gaap:GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityGainLossIncludedInOtherComprehensiveIncome",
+    "us-gaap:GainLossOnDiscontinuationOfCashFlowHedgeDueToForecastedTransactionProbableOfNotOccurringNet",
+    "us-gaap:GainLossOnSaleOfAccountsReceivable",
+    "us-gaap:UnrealizedGainLossOnDerivatives",
+    "us-gaap:DerivativeGainLossOnDerivativeNet",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetGainLossIncludedInEarnings1",
+    "us-gaap:DebtSecuritiesHeldToMaturityTransferDerivativeHedgeGainLoss",
+    "us-gaap:EmbeddedDerivativeGainLossOnEmbeddedDerivativeNet",
+    "us-gaap:CryptoAssetRealizedAndUnrealizedGainOperatingAndNonoperating",
+    "us-gaap:ExtinguishmentOfDebtGainLossNetOfTax",
+    "us-gaap:GainOnDiscontinuationOfCashFlowHedgeDueToForecastedTransactionProbableOfNotOccurring",
+    "us-gaap:InvestmentCompanyGainLossOnInvestmentNotMeetingGuidelines",
+    "us-gaap:DebtSecuritiesAvailableForSaleRealizedGain",
+    "us-gaap:DebtSecuritiesGainLoss",
+    "us-gaap:GainsLossesOnSalesOfInvestmentRealEstate",
+    "us-gaap:DerivativeGainOnDerivative",
+    "us-gaap:GainFromComponentsExcludedFromAssessmentOfCashFlowHedgeEffectiveness",
+    "us-gaap:ForeignCurrencyTransactionGainLossUnrealizedExcludingInvestmentPriceChangeAfterTax",
+    "us-gaap:GainLossRecognizedOnAssetsTransferredToSeparateAccount",
+    "us-gaap:UnrealizedGainLossOnPriceRiskCashFlowDerivativesBeforeTax",
+    "us-gaap:CryptoAssetUnrealizedGainLossOperatingAndNonoperating",
+    "us-gaap:DebtSecuritiesTradingUnrealizedGain",
+    "us-gaap:DebtSecuritiesTradingRealizedGain",
+    "us-gaap:GainLossOnForeignCurrencyDerivativeInstrumentsNotDesignatedAsHedgingInstruments",
+    "us-gaap:UnrealizedGainOnPriceRiskCashFlowDerivativesBeforeTax",
+    "us-gaap:ForeignCurrencyTransactionGainLossUnrealizedExcludingInvestmentPriceChangeBeforeTax",
+    "us-gaap:DebtSecuritiesAvailableForSaleTransferToTradingGainLoss",
+    "us-gaap:FairValueLiabilitiesMeasuredOnRecurringBasisChangeInUnrealizedGainLoss",
+    "us-gaap:EquitySecuritiesFvNiGainLoss",
+    "us-gaap:AvailableForSaleDebtSecuritiesGrossUnrealizedGain",
+    "us-gaap:CryptoAssetRealizedAndUnrealizedGainLossOperatingAndNonoperating",
+    "us-gaap:FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisGainLossIncludedInEarnings",
+    "us-gaap:HeldToMaturitySecuritiesTransferredSecurityUnrealizedGainLoss",
+    "us-gaap:ForeignCurrencyTransactionGainLossExcludingInvestmentPriceChangeBeforeTax",
+    "us-gaap:EquitySecuritiesFvNiUnrealizedGain",
+    "us-gaap:ForeignCurrencyTransactionGainLossRealizedExcludingInvestmentPriceChangeBeforeTax",
+    "us-gaap:ForeignCurrencyTransactionGainLossAfterTax",
+    "us-gaap:DerivativeExcludedComponentGainLossRecognizedInEarnings",
+    "us-gaap:GainLossOnSaleOfCommodityContracts",
+    "us-gaap:DebtSecuritiesUnrealizedGainLoss",
+    "us-gaap:DebtSecuritiesTradingGainLoss",
+    "us-gaap:GainLossOnSaleOfOtherLoansAndLeases",
+    "us-gaap:UnrealizedGainLossOnDerivativesAndCommodityContracts",
+    "us-gaap:EmbeddedDerivativeGainOnEmbeddedDerivative",
+    "us-gaap:GainFromHedgedFirmCommitmentNotQualifyingAsFairValueHedge",
+    "us-gaap:FairValueAssetsMeasuredOnRecurringBasisChangeInUnrealizedGainLoss",
+    "us-gaap:GainLossOnDispositionOfRealEstateDiscontinuedOperations",
+    "us-gaap:GainFromComponentsExcludedFromAssessmentOfFairValueHedgeEffectiveness",
+    "us-gaap:FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetGainLossIncludedInOtherComprehensiveIncomeLoss",
+    "us-gaap:FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisChangeInUnrealizedGainLoss",
+    "us-gaap:DebtSecuritiesAvailableForSaleTransferToTradingGain",
+    "us-gaap:UnrealizedGainLossOnHybridInstrumentNet",
+    "us-gaap:OtherNonrecurringGain",
+    "us-gaap:GainLossOnPriceRiskDerivativesNet",
+    "us-gaap:GainLossOnForeignCurrencyFairValueHedgeDerivatives",
+    "us-gaap:UnrealizedGainLossOnPriceRiskFairValueHedgingInstruments",
+    "us-gaap:ClosedBlockOperationsRealizedInvestmentGainsLosses",
+    "us-gaap:GainLossOnSaleOfOtherInvestments",
+    "us-gaap:ForeignCurrencyTransactionGainLossRealizedAfterTax",
+    "us-gaap:FairValueAssetLiabilityRecurringBasisStillHeldUnrealizedGainLoss",
+    "us-gaap:UnrealizedGainLossOnForeignCurrencyDerivativesNetBeforeTax",
+    "us-gaap:UnrealizedGainLossOnCommodityContracts",
+    "us-gaap:UnrealizedGainLossOnInterestRateCashFlowHedgesPretaxAccumulatedOtherComprehensiveIncomeLoss",
+    "us-gaap:DirectFinancingLeaseLeaseIncome",
+    "us-gaap:DirectPremiumsWritten",
+    "us-gaap:DiscontinuedOperationAmountOfAdjustmentToPriorPeriodGainLossOnDisposalNetOfTax",
+    "us-gaap:DiscontinuedOperationGainLossOnDisposalOfDiscontinuedOperationNetOfTax",
+    "us-gaap:DividendIncomeEquitySecuritiesOperating",
+    "us-gaap:FeesAndCommissionsMortgageBankingAndServicing",
+    "us-gaap:GovernmentAssistanceExpense",
+    "us-gaap:GovernmentAssistanceNonoperatingExpense",
+    "us-gaap:GovernmentAssistanceNonoperatingIncome",
+    "us-gaap:GovernmentAssistanceOperatingExpense",
+    "us-gaap:GovernmentAssistanceOperatingIncome",
+    "us-gaap:GrossInvestmentIncomeOperating",
+    "us-gaap:IncreaseDecreaseInUnearnedPremiumsNet",
+    "us-gaap:InterestAndDividendIncomeOperating",
+    "us-gaap:InterestAndDividendIncomeSecurities",
+    "us-gaap:InterestAndDividendIncomeSecuritiesHeldToMaturity",
+    "us-gaap:InterestAndDividendIncomeSecuritiesOther",
+    "us-gaap:InterestCostsCapitalizedAdjustment",
+    "us-gaap:InterestIncomeDebtSecuritiesAvailableForSaleOperating",
+    "us-gaap:InterestIncomeDebtSecuritiesOperating",
+    "us-gaap:InterestIncomeDebtSecuritiesTradingOperating",
+    "us-gaap:InterestIncomeDepositsWithOtherFederalHomeLoanBanks",
+    "us-gaap:InterestIncomeExpenseAfterProvisionForLoanLoss",
+    "us-gaap:InterestIncomeExpenseNet",
+    "us-gaap:InterestIncomeFederalHomeLoanBankAdvances",
+    "us-gaap:InterestIncomeLoansToOtherFederalHomeLoanBanks",
+    "us-gaap:InterestIncomeOther",
+    "us-gaap:InterestIncomeSecuritiesCorporateDebtOperating",
+    "us-gaap:InterestIncomeSecuritiesMortgageBacked",
+    "us-gaap:InterestIncomeSecuritiesOtherUSGovernment",
+    "us-gaap:InterestIncomeSecuritiesStateAndMunicipal",
+    "us-gaap:InterestIncomeSecuritiesUSTreasury",
+    "us-gaap:InterestIncomeSecuritiesUSTreasuryAndOtherUSGovernment",
+    "us-gaap:InvestmentBankingAdvisoryBrokerageAndUnderwritingFeesAndCommissions",
+    "us-gaap:LeaseIncome",
+    "us-gaap:NoninterestIncome",
+    "us-gaap:PreferredStockRedemptionDiscount",
+    "us-gaap:PremiumsWrittenGross",
+    "us-gaap:PremiumsWrittenNet",
+    "us-gaap:PrepaymentFeesOnAdvancesNet",
+    "us-gaap:RevenueNotFromContractWithCustomer",
+    "us-gaap:RevenueNotFromContractWithCustomerOther",
+    "us-gaap:RevenuesNetOfInterestExpense",
+    "us-gaap:SalesTypeLeaseInterestIncomeLeaseReceivable",
+    "us-gaap:SalesTypeLeaseInterestIncomeUnguaranteedResidualAsset",
+    "us-gaap:SalesTypeLeaseLeaseIncome",
+    "us-gaap:AssumedPremiumsWritten",
+    "us-gaap:GovernmentAssistanceAmount",
+    "us-gaap:DebtSecuritiesAvailableForSaleChangeInPresentValueInterestIncome",
+    "us-gaap:AssetsDisposedOfByMethodOtherThanSaleInPeriodOfDispositionGainLossOnDisposition1",
+    "us-gaap:AmountRecognizedInIncomeDueToInflationaryAccounting",
+    "us-gaap:ChangeInUnrealizedGainLossOnFairValueHedgingInstruments1",
+    "us-gaap:DebtorReorganizationItemsGainLossOnAssetSalesNet1",
+    "us-gaap:DebtSecuritiesHeldToMaturitySoldDerivativeHedgeGainLoss",
+    "us-gaap:DebtorReorganizationItemsGainLossOnSettlementOfOtherClaimsNet1",
+    "us-gaap:DebtorReorganizationItemsInterestIncomeOnAccumulatedCash1",
+    "us-gaap:DebtorReorganizationItemsNetGainLossOnRejectionOfLeasesAndOtherExecutoryContracts1",
+    "us-gaap:FeeIncomeOnAcceptancesExecuted",
+    "us-gaap:FinancingReceivableNonaccrualInterestIncome",
+    "us-gaap:InsuredEventGainLoss",
+    "us-gaap:LifeSettlementContractsFairValueMethodGainLoss",
+    "us-gaap:LiquidationBasisOfAccountingRemeasurementGainLossOnAsset",
+    "us-gaap:MarketRiskBenefitChangeInFairValueGainLoss",
+    "us-gaap:NetInvestmentInLeaseChangeInPresentValueInterestIncome",
+    "us-gaap:NetInvestmentInLeaseNonaccrualInterestIncome",
+    "us-gaap:NondebtorReorganizationItemsNetGainLossOnSettlementOfOtherClaims1",
+    "us-gaap:NonmonetaryTransactionGainLossRecognizedOnTransfer",
+    "us-gaap:NonmonetaryTransactionGrossOperatingRevenueRecognized",
+    "us-gaap:PremiumsReceivableGainLossOnSaleOfReceivables",
+    "us-gaap:RegistrationPaymentArrangementGainsAndLosses",
+    "us-gaap:RevenueFromCollaborativeArrangementExcludingRevenueFromContractWithCustomer",
+    "us-gaap:SalesTypeAndDirectFinancingLeasesInterestIncome",
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseChangeInPresentValueInterestIncome",
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseNonaccrualInterestIncome",
+    "us-gaap:SupplementaryInsuranceInformationNetInvestmentIncome",
+    "us-gaap:SupplementaryInsuranceInformationPremiumRevenue",
+    "us-gaap:VariableInterestEntityInitialConsolidationGainOrLoss",
+    "us-gaap:VariableLeaseIncome",
+    "us-gaap:AdditionalLiabilityLongDurationInsuranceRemeasurementGainLoss",
+    "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+    "us-gaap:AccountsReceivableNoncurrentNonaccrualInterestIncome",
+    "us-gaap:ClosedBlockOperationsNetInvestmentIncome",
+    "us-gaap:ClosedBlockOperationsOtherRevenue",
+    "us-gaap:ClosedBlockOperationsPremiums",
+    "us-gaap:ClosedBlockOperationsRevenue",
+    "us-gaap:DebtSecuritiesHeldToMaturityChangeInPresentValueInterestIncome",
+    "us-gaap:DebtSecuritiesHeldToMaturityNonaccrualInterestIncome",
+    "us-gaap:DeferredIncomeRevenueRecognized",
+    "us-gaap:DividendIncomeOperatingPaidInCash",
+    "us-gaap:DividendIncomeOperatingPaidInKind",
+    "us-gaap:FinancingReceivableChangeInPresentValueInterestIncome",
+    "us-gaap:ForeignReinsuranceTransactionsClaimsRecognizedAsIncome",
+    "us-gaap:InsuranceServicesRevenue",
+    "us-gaap:InterestAndDividendIncomeOperatingPaidInCash",
+    "us-gaap:InterestAndDividendIncomeOperatingPaidInKind",
+    "us-gaap:InterestAndOtherIncome",
+    "us-gaap:InterestIncomeFinancingReceivableBeforeAllowanceForCreditLoss",
+    "us-gaap:InterestIncomeInterestEarningAsset",
+    "us-gaap:InterestIncomeOperatingAndNonoperating",
+    "us-gaap:InterestIncomeOperatingPaidInCash",
+    "us-gaap:InterestIncomeOperatingPaidInKind",
+    "us-gaap:InterestIncomeShortTermInvestmentOther",
+    "us-gaap:InvestmentIncomeOperatingAfterExpenseAndTax",
+    "us-gaap:OperatingLeaseVariableLeaseIncome",
+    "us-gaap:OtherRecurringIncome",
+    "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
+    "us-gaap:RegulatedOperatingRevenue",
+    "us-gaap:RegulatedOperatingRevenueElectricNonNuclear",
+    "us-gaap:RegulatedOperatingRevenueExplorationAndProduction",
+    "us-gaap:RegulatedOperatingRevenueFieldServices",
+    "us-gaap:RegulatedOperatingRevenueFossilFuel",
+    "us-gaap:RegulatedOperatingRevenueGas",
+    "us-gaap:RegulatedOperatingRevenueOther",
+    "us-gaap:RegulatedOperatingRevenuePipelines",
+    "us-gaap:RegulatedOperatingRevenueSteam",
+    "us-gaap:RegulatedOperatingRevenueWater",
+    "us-gaap:UnregulatedOperatingRevenue",
+    "us-gaap:AmortizationOfBelowMarketLease"
+   ],
+   "outflow": [
+    "us-gaap:DeferredPolicyAcquisitionCostAmortizationExpense",
+    "us-gaap:PresentValueOfFutureInsuranceProfitsAmortizationExpense1",
+    "us-gaap:SECScheduleIIIRealEstateWritedownOrReserveAmount",
+    "us-gaap:RealEstateInventoryCapitalizedInterestCostsCostOfSales1",
+    "us-gaap:ServicingAssetAtAmortizedValueAmortization1",
+    "us-gaap:ServicingAssetAtAmortizedCostOtherThanTemporaryImpairments",
+    "us-gaap:DeferredSalesInducementsAmortizationExpense",
+    "us-gaap:CapitalizedComputerSoftwareAmortization1",
+    "us-gaap:CapitalizedComputerSoftwareImpairments1",
+    "us-gaap:CapitalizedExploratoryWellCostChargedToExpense1",
+    "us-gaap:DeferredPolicyAcquisitionCostsAndPresentValueOfFutureProfitsAmortization1",
+    "us-gaap:LiabilityForAsbestosAndEnvironmentalClaimsGrossIncurredLoss1",
+    "us-gaap:LiabilityForAsbestosAndEnvironmentalClaimsNetIncurredLoss1",
+    "us-gaap:AccrualForEnvironmentalLossContingenciesChargesToExpenseForNewLosses",
+    "us-gaap:AccrualForEnvironmentalLossContingenciesIncreaseDecreaseForRevisionInEstimates",
+    "us-gaap:LiabilitiesSubjectToCompromiseExpenseReversalOfExpenseForLiabilities",
+    "us-gaap:MalpracticeLossContingencyPeriodCost",
+    "us-gaap:MalpracticeLossContingencyPremiumCosts",
+    "us-gaap:DefinedBenefitPlanServiceCost",
+    "us-gaap:DefinedBenefitPlanInterestCost",
+    "us-gaap:RealEstateOwnedValuationAllowanceProvision1",
+    "us-gaap:SECScheduleIIIRealEstateAccumulatedDepreciationDepreciationExpense",
+    "us-gaap:DepreciationExcludingLessorAssetUnderOperatingLease",
+    "us-gaap:OperatingLeasesIncomeStatementDepreciationExpenseOnPropertySubjectToOrHeldForLease",
+    "us-gaap:Depreciation",
+    "us-gaap:OtherDepreciationAndAmortization",
+    "us-gaap:Depletion",
+    "us-gaap:DepreciationDepletionAndAmortization",
+    "us-gaap:AccumulatedDepreciationDepletionAndAmortizationReclassificationsFromPropertyPlantAndEquipment1",
+    "us-gaap:RestructuringCharges",
+    "us-gaap:RestructuringReserveAccrualAdjustment1",
+    "us-gaap:RestructuringReserveAcceleratedDepreciation",
+    "us-gaap:DeferredFinanceCostsOwnShareLendingArrangementIssuanceCostsAmortizationExpense1",
+    "us-gaap:FinancingReceivableChangeInMethodCreditLossExpenseReversal",
+    "us-gaap:ProvisionForLoanLossesExpensed",
+    "us-gaap:FinancingReceivableTransferToHeldForInvestmentAllowanceForCreditLossExpense",
+    "us-gaap:ProvisionForDoubtfulAccounts",
+    "us-gaap:AffordableHousingProgramAssessments",
+    "us-gaap:DebtSecuritiesHeldToMaturityCreditLossExpenseReversal",
+    "us-gaap:DebtSecuritiesAvailableForSaleTransferToHeldToMaturityAllowanceForCreditLossExpense",
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossNotPreviouslyRecorded",
+    "us-gaap:DebtSecuritiesAvailableForSaleAllowanceForCreditLossNotToSellBeforeRecoveryCreditLossPreviouslyRecordedExpenseReversal",
+    "us-gaap:DebtSecuritiesHeldToMaturityTransferToAvailableForSaleAllowanceForCreditLossExpense",
+    "us-gaap:ContractWithCustomerAssetCreditLossExpense",
+    "us-gaap:NetInvestmentInLeaseCreditLossExpenseReversal",
+    "us-gaap:NetInvestmentInLeaseChangeInMethodCreditLossExpenseReversal",
+    "us-gaap:SalesTypeLeaseImpairmentLoss",
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseChangeInMethodCreditLossExpenseReversal",
+    "us-gaap:DirectFinancingLeaseImpairmentLoss",
+    "us-gaap:ReinsuranceRecoverableCreditLossExpenseReversal",
+    "us-gaap:SecuritiesPurchasedUnderAgreementsToResellCreditLossExpenseReversal",
+    "us-gaap:SecuritiesBorrowedCreditLossExpenseReversal",
+    "us-gaap:OffBalanceSheetCreditLossLiabilityCreditLossExpenseReversal",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestCreditLossExpenseReversal",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestChangeInMethodCreditLossExpenseReversal",
+    "us-gaap:FinancingReceivableExcludingAccruedInterestTransferToHeldForInvestmentAllowanceForCreditLossExpense",
+    "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestCreditLossExpenseReversal",
+    "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestChangeInMethodCreditLossExpenseReversal",
+    "us-gaap:DebtSecuritiesAvailableForSaleExcludingAccruedInterestTransferToHeldToMaturityAllowanceForCreditLossExpense",
+    "us-gaap:DebtSecuritiesAvailableForSaleExcludingAccruedInterestAllowanceForCreditLossNotPreviouslyRecorded",
+    "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestTransferToAvailableForSaleAllowanceForCreditLossExpense",
+    "us-gaap:NetIncomeLossAttributableToNoncontrollingInterest",
+    "us-gaap:InvestmentCompanyDistributionOrdinaryIncome",
+    "us-gaap:InvestmentCompanyDistributionLongTermCapitalGain",
+    "us-gaap:InvestmentCompanyDividendDistribution",
+    "us-gaap:InterestCreditedToPolicyholdersAccountBalances",
+    "us-gaap:AmortizationOfAdvanceRoyalty",
+    "us-gaap:InterestExpenseFederalHomeLoanBankAndFederalReserveBankAdvancesLongTerm",
+    "us-gaap:InterestExpenseOtherLongTermDebt",
+    "us-gaap:CostOfTrustAssetsSoldToPayExpenses",
+    "us-gaap:AmortizationOfDeferredPropertyTaxes",
+    "us-gaap:AmortizationOfRateDeferral",
+    "us-gaap:InterestExpenseCapitalSecurities",
+    "us-gaap:AmortizationOfDeferredHedgeGains",
+    "us-gaap:InterestExpenseBeneficialInterestsIssuedByConsolidatedVariableInterestEntities",
+    "us-gaap:AmortizationAndDepreciationOfDecontaminatingAndDecommissioningAssets",
+    "us-gaap:InterestExpenseTrustPreferredSecurities",
+    "us-gaap:OtherAmortizationOfDeferredCharges",
+    "us-gaap:WriteOffOfDeferredDebtIssuanceCost",
+    "us-gaap:InducedConversionOfConvertibleDebtExpense",
+    "us-gaap:ExplorationExpense",
+    "us-gaap:CarryingCostsPropertyAndExplorationRights",
+    "us-gaap:DirectTaxesAndLicensesCosts",
+    "us-gaap:CurrentForeignTaxExpenseBenefit",
+    "us-gaap:RecapitalizationCosts",
+    "us-gaap:CurrentFederalTaxExpenseBenefit",
+    "us-gaap:BusinessExitCosts1",
+    "us-gaap:CurrentStateAndLocalTaxExpenseBenefit",
+    "us-gaap:SeveranceCosts1",
+    "us-gaap:CostOfOtherPropertyOperatingExpense",
+    "us-gaap:OtherRestructuringCosts",
+    "us-gaap:DeferredForeignIncomeTaxExpenseBenefit",
+    "us-gaap:CostMaintenance",
+    "us-gaap:BusinessCombinationAcquisitionRelatedCosts",
+    "us-gaap:InventoryRecallExpense",
+    "us-gaap:DeferredFederalIncomeTaxExpenseBenefit",
+    "us-gaap:DeferredStateAndLocalIncomeTaxExpenseBenefit",
+    "us-gaap:EnvironmentalRemediationExpense",
+    "us-gaap:DeferredOtherTaxExpenseBenefit",
+    "us-gaap:OtherTaxExpenseBenefit",
+    "us-gaap:IncomeTaxExpenseBenefitContinuingOperationsAdjustmentOfDeferredTaxAssetLiability",
+    "us-gaap:GoodwillImpairmentLoss",
+    "us-gaap:TaxAdjustmentsSettlementsAndUnusualProvisions",
+    "us-gaap:CostOfGoodsAndServicesSoldOverhead",
+    "us-gaap:ImpairmentOfIntangibleAssetsFinitelived",
+    "us-gaap:UnrecognizedTaxBenefitsIncomeTaxPenaltiesExpense",
+    "us-gaap:ImpairmentOfIntangibleAssetsIndefinitelivedExcludingGoodwill",
+    "us-gaap:UnrecognizedTaxBenefitsInterestOnIncomeTaxesExpense",
+    "us-gaap:CostOfPropertyRepairsAndMaintenance",
+    "us-gaap:FinanceLeaseImpairmentLoss",
+    "us-gaap:AmortizationMethodQualifiedAffordableHousingProjectInvestmentsAmortization",
+    "us-gaap:OperatingLeaseImpairmentLoss",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationCostsOfGoodsSold",
+    "us-gaap:WaterProductionCosts",
+    "us-gaap:EquityMethodInvestmentOtherThanTemporaryImpairment",
+    "us-gaap:CostOfPurchasedWater",
+    "us-gaap:ImpairmentLossesRelatedToRealEstatePartnerships",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationDepreciationAndAmortization",
+    "us-gaap:ManufacturingCosts",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationGeneralAndAdministrativeExpense",
+    "us-gaap:DirectOperatingMaintenanceSuppliesCosts",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationInterestExpense",
+    "us-gaap:OperatingInsuranceAndClaimsCostsProduction",
+    "us-gaap:ImpairmentOfLeasehold",
+    "us-gaap:DisposalGroupIncludingDiscontinuedOperationOtherExpense",
+    "us-gaap:FuelCosts",
+    "us-gaap:DiscontinuedOperationProvisionForLossGainOnDisposalBeforeIncomeTax",
+    "us-gaap:ImpairmentOfLongLivedAssetsToBeDisposedOf",
+    "us-gaap:DirectOperatingCommunicationsCosts",
+    "us-gaap:DiscontinuedOperationTaxEffectOfIncomeLossFromDiscontinuedOperationDuringPhaseOutPeriod",
+    "us-gaap:ImpairmentLessorAssetUnderOperatingLease",
+    "us-gaap:DiscontinuedOperationTaxEffectOfIncomeLossFromDisposalOfDiscontinuedOperation",
+    "us-gaap:AircraftRental",
+    "us-gaap:ImpairmentExcludingLessorAssetUnderOperatingLease",
+    "us-gaap:DiscontinuedOperationTaxEffectOfAdjustmentToPriorPeriodGainLossOnDisposal",
+    "us-gaap:LandingFeesAndOtherRentals",
+    "us-gaap:ImpairmentOfOngoingProject",
+    "us-gaap:LossOnContracts",
+    "us-gaap:ImpairmentOfRealEstate",
+    "us-gaap:ExplorationAbandonmentAndImpairmentExpense",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossJointVenturePartnersRedeemable",
+    "us-gaap:AffiliateCosts",
+    "us-gaap:InventoryFirmPurchaseCommitmentLoss",
+    "us-gaap:ImpairmentOfOilAndGasProperties",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossLimitedPartnershipsRedeemable",
+    "us-gaap:ExciseAndSalesTaxes",
+    "us-gaap:DisposalGroupNotDiscontinuedOperationLossGainOnWriteDown",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossOperatingPartnershipsRedeemable",
+    "us-gaap:AffordableHousingProjectInvestmentWriteDownAmount",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossOtherNoncontrollingInterestsRedeemable",
+    "us-gaap:InventoryWriteDown",
+    "us-gaap:CustodyFees",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossPreferredUnitHoldersRedeemable",
+    "us-gaap:TrusteeFees",
+    "us-gaap:SponsorFees",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossJointVenturePartnersNonredeemable",
+    "us-gaap:CostOfGoodsAndServicesSoldDepreciation",
+    "us-gaap:RoyaltyExpense",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossLimitedPartnershipsNonredeemable",
+    "us-gaap:CostOfGoodsAndServicesSoldAmortization",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossOperatingPartnershipsNonredeemable",
+    "us-gaap:CostDepletion",
+    "us-gaap:AssetRetirementObligationAccretionExpense",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossOtherNoncontrollingInterestsNonredeemable",
+    "us-gaap:FinancingInterestExpense",
+    "us-gaap:AccretionExpense",
+    "us-gaap:NoncontrollingInterestInNetIncomeLossPreferredUnitHoldersNonredeemable",
+    "us-gaap:LoanPortfolioExpense",
+    "us-gaap:ProvisionForOtherCreditLosses",
+    "us-gaap:PreOpeningCosts",
+    "us-gaap:ProvisionForOtherLosses",
+    "us-gaap:LitigationSettlementInterest",
+    "us-gaap:LegalFees",
+    "us-gaap:PolicyholderBenefitsAndClaimsIncurredGross",
+    "us-gaap:ReinsuranceEffectOnClaimsAndBenefitsIncurredAmountAssumed",
+    "us-gaap:MalpracticeLossContingencyClaimsIncurredInPeriod",
+    "us-gaap:MalpracticeLossContingencyClaimsIncurredInPriorPeriods",
+    "us-gaap:OtherCostAndExpenseOperating",
+    "us-gaap:PolicyholderDividends",
+    "us-gaap:BusinessCombinationIntegrationRelatedCosts",
+    "us-gaap:UnsolicitedTenderOfferCosts",
+    "us-gaap:ProfessionalAndContractServicesExpense",
+    "us-gaap:AmortizationOfMortgageServicingRightsMSRs",
+    "us-gaap:AmortizationOfValueOfBusinessAcquiredVOBA",
+    "us-gaap:SellingExpense",
+    "us-gaap:OtherCostOfOperatingRevenue",
+    "us-gaap:SalesCommissionsAndFees",
+    "us-gaap:MarketingExpense",
+    "us-gaap:AdvertisingExpense",
+    "us-gaap:ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost",
+    "us-gaap:ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+    "us-gaap:CostsOfFranchisorOwnedOutlets",
+    "us-gaap:ResearchAndDevelopmentAssetAcquiredOtherThanThroughBusinessCombinationWrittenOff",
+    "us-gaap:CostsOfFranchisedOutlets",
+    "us-gaap:ProductWarrantyExpense",
+    "us-gaap:DepreciationNonproduction",
+    "us-gaap:OtherSellingAndMarketingExpense",
+    "us-gaap:DepletionOfOilAndGasProperties",
+    "us-gaap:AllocatedShareBasedCompensationExpense",
+    "us-gaap:AmortizationOfAcquisitionCosts",
+    "us-gaap:AmortizationOfIntangibleAssets",
+    "us-gaap:SalariesAndWages",
+    "us-gaap:AmortizationOfDeferredSalesCommissions",
+    "us-gaap:OfficersCompensation",
+    "us-gaap:AmortizationOfRegulatoryAsset",
+    "us-gaap:OtherLaborRelatedExpenses",
+    "us-gaap:FinanceLeaseRightOfUseAssetAmortization",
+    "us-gaap:ProfessionalFees",
+    "us-gaap:AmortizationOfPowerContractsEmissionCredits",
+    "us-gaap:BusinessDevelopment",
+    "us-gaap:AmortizationOfNuclearFuelLease",
+    "us-gaap:GeneralInsuranceExpense",
+    "us-gaap:RealEstateInsurance",
+    "us-gaap:Communication",
+    "us-gaap:InformationTechnologyAndDataProcessing",
+    "us-gaap:OccupancyNet",
+    "us-gaap:OperatingLeaseExpense",
+    "us-gaap:TravelAndEntertainmentExpense",
+    "us-gaap:SuppliesExpense",
+    "us-gaap:PostageExpense",
+    "us-gaap:InsuranceTax",
+    "us-gaap:RealEstateTaxExpense",
+    "us-gaap:ProductionTaxExpense",
+    "us-gaap:PumpTaxes",
+    "us-gaap:TaxesOther",
+    "us-gaap:OtherGeneralAndAdministrativeExpense",
+    "us-gaap:LossContingencyLossInPeriod",
+    "us-gaap:OtherSellingGeneralAndAdministrativeExpense",
+    "us-gaap:TradingActivityLoss",
+    "us-gaap:OtherGeneralExpense",
+    "us-gaap:DirectFinancingLeaseSellingLoss",
+    "us-gaap:OtherUnderwritingExpense",
+    "us-gaap:DemutualizationCostAndExpense",
+    "us-gaap:InsuranceCommissions",
+    "us-gaap:FloorBrokerage",
+    "us-gaap:ExchangeFees",
+    "us-gaap:OrderFlowFees",
+    "us-gaap:ClearanceFees",
+    "us-gaap:AdministrativeFeesExpense",
+    "us-gaap:IncentiveFeeExpense",
+    "us-gaap:ManagementFeeExpense",
+    "us-gaap:OtherExpenses",
+    "us-gaap:OtherNonrecurringExpense",
+    "us-gaap:RecoveryStrandedCosts",
+    "us-gaap:LeveragedLeasesIncomeStatementIncomeTaxExpenseOnLeveragedLeases",
+    "us-gaap:InvestmentIncomeAmortizationOfPremium",
+    "us-gaap:DirectCostsOfLeasedAndRentedPropertyOrEquipment",
+    "us-gaap:InvestmentIncomeInvestmentExpense",
+    "us-gaap:LossFromCatastrophes",
+    "us-gaap:SalesTypeLeaseInitialDirectCostExpenseCommencement",
+    "us-gaap:CostOfGoodsSoldDirectFinancingLease",
+    "us-gaap:OperatingLeaseInitialDirectCostExpenseOverTerm",
+    "us-gaap:MortgageServicingRightsMSRImpairmentRecovery",
+    "us-gaap:NetPeriodicDefinedBenefitsExpenseReversalOfExpenseExcludingServiceCostComponent",
+    "us-gaap:OtherNonoperatingExpense",
+    "us-gaap:UnusualOrInfrequentItemLossGross",
+    "us-gaap:CostOfGoodsSoldSalesTypeLease",
+    "us-gaap:InterestExpenseDebt",
+    "us-gaap:InterestExpenseCustomerDeposits",
+    "us-gaap:DebtRelatedCommitmentFeesAndDebtIssuanceCosts",
+    "us-gaap:FinanceLeaseInterestExpense",
+    "us-gaap:InterestExpenseOther",
+    "us-gaap:CostDirectMaterial",
+    "us-gaap:InterestExpenseNegotiableOrderOfWithdrawalNOWDeposits",
+    "us-gaap:InterestExpenseMoneyMarketDeposits",
+    "us-gaap:InterestExpenseSavingsDeposits",
+    "us-gaap:InterestExpenseDemandDepositAccounts",
+    "us-gaap:InterestExpenseTimeDepositsLessThan100000",
+    "us-gaap:InterestExpenseTimeDeposits100000OrMore",
+    "us-gaap:InterestExpenseOtherDomesticDeposits",
+    "us-gaap:InterestExpenseForeignDeposits",
+    "us-gaap:InterestExpenseTradingLiabilities",
+    "us-gaap:CostDirectLabor",
+    "us-gaap:InterestExpenseFederalFundsPurchased",
+    "us-gaap:InterestExpenseSecuritiesSoldUnderAgreementsToRepurchase",
+    "us-gaap:InterestExpenseFederalHomeLoanBankAndFederalReserveBankAdvancesShortTerm",
+    "us-gaap:InterestExpenseCommercialPaper",
+    "us-gaap:InterestExpenseOtherShortTermBorrowings",
+    "us-gaap:InterestExpenseSubordinatedNotesAndDebentures",
+    "us-gaap:InterestExpenseJuniorSubordinatedDebentures",
+    "us-gaap:InterestExpenseMediumTermNotes",
+    "us-gaap:AccretionExpenseIncludingAssetRetirementObligations",
+    "us-gaap:LitigationSettlementLoss",
+    "us-gaap:CapitalizedContractCostImpairmentLoss",
+    "us-gaap:ResultsOfOperationsImpairmentOfOilAndGasProperties",
+    "us-gaap:DebtSecuritiesAvailableForSaleTransferToTradingLoss",
+    "us-gaap:ImpairmentChargeOnReclassifiedAssets",
+    "us-gaap:LossOnContractTerminationForDefault",
+    "us-gaap:UnrealizedLossOnForeignCurrencyDerivativesBeforeTax",
+    "us-gaap:DebtSecuritiesAvailableForSaleRealizedLoss",
+    "us-gaap:LossFromComponentsExcludedFromAssessmentOfFairValueHedgeEffectiveness",
+    "us-gaap:LossOnDerivativeInstrumentsPretax",
+    "us-gaap:DebtSecuritiesTradingRealizedLoss",
+    "us-gaap:EmbeddedDerivativeLossOnEmbeddedDerivative",
+    "us-gaap:AvailableForSaleDebtSecuritiesGrossUnrealizedLoss",
+    "us-gaap:LossOnDiscontinuationOfCashFlowHedgeDueToForecastedTransactionProbableOfNotOccurring",
+    "us-gaap:LossFromHedgedFirmCommitmentNotQualifyingAsFairValueHedge",
+    "us-gaap:EquitySecuritiesFvNiRealizedLoss",
+    "us-gaap:LossOnContractTermination",
+    "us-gaap:FilmMonetizedOnItsOwnAndFilmGroupImpairment",
+    "us-gaap:LossRecognizedOnAssetsTransferredToSeparateAccountGross",
+    "us-gaap:GoodwillImpairmentLossNetOfTax",
+    "us-gaap:DebtorReorganizationItemsImpairmentLoss",
+    "us-gaap:LossFromComponentsExcludedFromAssessmentOfCashFlowHedgeEffectiveness",
+    "us-gaap:ProductionRelatedImpairmentsOrCharges",
+    "us-gaap:EquitySecuritiesFvNiUnrealizedLoss",
+    "us-gaap:UnrealizedLossOnPriceRiskCashFlowDerivativesBeforeTax",
+    "us-gaap:DebtSecuritiesTradingUnrealizedLoss",
+    "us-gaap:EquitySecuritiesWithoutReadilyDeterminableFairValueDownwardPriceAdjustmentAnnualAmount",
+    "us-gaap:DerivativeLossOnDerivative",
+    "us-gaap:EquitySecuritiesWithoutReadilyDeterminableFairValueImpairmentLossAnnualAmount",
+    "us-gaap:TangibleAssetImpairmentCharges",
+    "us-gaap:AircraftRentalAndLandingFees",
+    "us-gaap:AmortizationOfDeferredCharges",
+    "us-gaap:AmortizationOfFinancingCosts",
+    "us-gaap:AssetImpairmentCharges",
+    "us-gaap:BenefitsLossesAndExpenses",
+    "us-gaap:CededPremiumsWritten",
+    "us-gaap:CommunicationsAndInformationTechnology",
+    "us-gaap:CommunicationsInformationTechnologyAndOccupancy",
+    "us-gaap:CongressionallyMandatedFederalHomeLoanBankAssessments",
+    "us-gaap:ConvertiblePreferredStockConvertedToOtherSecurities",
+    "us-gaap:CostDepreciationAmortizationAndDepletion",
+    "us-gaap:CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization",
+    "us-gaap:CostOfGoodsAndServicesSold",
+    "us-gaap:CostOfGoodsAndServicesSoldDepreciationAndAmortization",
+    "us-gaap:CostOfRevenue",
+    "us-gaap:CostsAndExpenses",
+    "us-gaap:CostsAndExpensesRelatedParty",
+    "us-gaap:DepreciationAndAmortization",
+    "us-gaap:DirectCommunicationsAndUtilitiesCosts",
+    "us-gaap:DirectOperatingCosts",
+    "us-gaap:DiscontinuedOperationProvisionForLossGainOnDisposalNetOfTax",
+    "us-gaap:DiscontinuedOperationTaxEffectOfDiscontinuedOperation",
+    "us-gaap:EquipmentExpense",
+    "us-gaap:EquityClassifiedWrittenCallOptionModificationDecreaseInNetIncomeLossToCommonShareholderAmount",
+    "us-gaap:ExpenseRelatedToDistributionOrServicingAndUnderwritingFees",
+    "us-gaap:FederalDepositInsuranceCorporationPremiumExpense",
+    "us-gaap:FederalHomeLoanBankAssessments",
+    "us-gaap:FloorBrokerageExchangeAndClearanceFees",
+    "us-gaap:ForeclosedRealEstateExpense",
+    "us-gaap:FranchisorCosts",
+    "us-gaap:GeneralAndAdministrativeExpense",
+    "us-gaap:GeneralPartnerDistributions",
+    "us-gaap:GoodwillAndIntangibleAssetImpairment",
+    "us-gaap:ImpairmentOfLongLivedAssetsHeldForUse",
+    "us-gaap:IncomeTaxExpenseBenefit",
+    "us-gaap:InterestAndDebtExpense",
+    "us-gaap:InterestExpense",
+    "us-gaap:InterestExpenseBorrowings",
+    "us-gaap:InterestExpenseDeposits",
+    "us-gaap:InterestExpenseDepositsFromOtherFederalHomeLoanBanks",
+    "us-gaap:InterestExpenseDomesticDeposits",
+    "us-gaap:InterestExpenseFederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchase",
+    "us-gaap:InterestExpenseLoansFromOtherFederalHomeLoanBanks",
+    "us-gaap:InterestExpenseLongTermDebt",
+    "us-gaap:InterestExpenseLongTermDebtAndCapitalSecurities",
+    "us-gaap:InterestExpenseNOWAccountsMoneyMarketAccountsAndSavingsDeposits",
+    "us-gaap:InterestExpenseNonoperating",
+    "us-gaap:InterestExpenseOperating",
+    "us-gaap:InterestExpenseShortTermBorrowings",
+    "us-gaap:InterestExpenseShortTermBorrowingsExcludingFederalFundsAndSecuritiesSoldUnderAgreementsToRepurchase",
+    "us-gaap:InterestExpenseTimeDeposits",
+    "us-gaap:LaborAndRelatedExpense",
+    "us-gaap:LeasingCommissionsExpense",
+    "us-gaap:LoanProcessingFee",
+    "us-gaap:MalpracticeLossContingencyClaimsIncurredNet",
+    "us-gaap:MarketingAndAdvertisingExpense",
+    "us-gaap:NoninterestExpense",
+    "us-gaap:NoninterestExpenseCommissionExpense",
+    "us-gaap:NoninterestExpenseDirectorsFees",
+    "us-gaap:NoninterestExpenseInvestmentAdvisoryFees",
+    "us-gaap:NoninterestExpenseOfferingCost",
+    "us-gaap:NoninterestExpensePrintingAndFulfillment",
+    "us-gaap:NoninterestExpenseRelatedToPerformanceFees",
+    "us-gaap:NoninterestExpenseTransferAgentAndCustodianFees",
+    "us-gaap:OfficeOfFinanceAssessmentsCostAssessedOnFederalHomeLoanBank",
+    "us-gaap:OperatingCostsAndExpenses",
+    "us-gaap:OperatingExpenses",
+    "us-gaap:OtherAssetImpairmentCharges",
+    "us-gaap:OtherNoninterestExpense",
+    "us-gaap:OtherNonrecurringIncomeExpense",
+    "us-gaap:OtherPreferredStockDividendsAndAdjustments",
+    "us-gaap:PolicyholderBenefitsAndClaimsIncurredNet",
+    "us-gaap:PreferredStockConversionsInducements",
+    "us-gaap:PreferredStockConvertibleDownRoundFeatureDecreaseInNetIncomeLossToCommonShareholderAmount",
+    "us-gaap:PreferredStockDividendsAndOtherAdjustments",
+    "us-gaap:PreferredStockDividendsIncomeStatementImpact",
+    "us-gaap:PreferredStockRedemptionPremium",
+    "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+    "us-gaap:RealEstateInvestmentPartnershipCostOfSales",
+    "us-gaap:RedeemablePreferredStockDividends",
+    "us-gaap:RegulatorExpensesCostAssessedOnFederalHomeLoanBank",
+    "us-gaap:ResearchAndDevelopmentExpense",
+    "us-gaap:RestructuringSettlementAndImpairmentProvisions",
+    "us-gaap:SellingAndMarketingExpense",
+    "us-gaap:SellingGeneralAndAdministrativeExpense",
+    "us-gaap:StockOptionDownRoundFeatureDecreaseInNetIncomeLossToCommonShareholderAmount",
+    "us-gaap:SubadvisoryFeesForMutualFunds",
+    "us-gaap:SuppliesAndPostageExpense",
+    "us-gaap:TaxesExcludingIncomeAndExciseTaxes",
+    "us-gaap:TemporaryEquityAccretionToRedemptionValueAdjustment",
+    "us-gaap:TemporaryEquityDividendsAdjustment",
+    "us-gaap:UndistributedEarningsLossAllocatedToParticipatingSecuritiesBasic",
+    "us-gaap:UtilitiesOperatingExpenseMaintenanceOperationsAndOtherCostsAndExpenses",
+    "us-gaap:WarrantDownRoundFeatureDecreaseInNetIncomeLossToCommonShareholderAmount",
+    "us-gaap:CurrentIncomeTaxExpenseBenefit",
+    "us-gaap:AdjustmentForAmortization",
+    "us-gaap:AdjustmentForLongTermIntercompanyTransactionsTaxExpenseBenefit",
+    "us-gaap:AircraftMaintenanceMaterialsAndRepairs",
+    "us-gaap:AllocatedShareBasedCompensationExpenseNetOfTax",
+    "us-gaap:AmortizationOfDebtDiscountPremium",
+    "us-gaap:AmortizationOfFinancingCostsAndDiscounts",
+    "us-gaap:CapitalizedContractCostAmortization",
+    "us-gaap:ContractWithCustomerReceivableCreditLossExpenseReversal",
+    "us-gaap:CooperativeAdvertisingExpense",
+    "us-gaap:CostOfServicesCatering",
+    "us-gaap:DeferredCompensationArrangementWithIndividualAllocatedShareBasedCompensationExpense",
+    "us-gaap:DepreciationAmortizationAndAccretionNet",
+    "us-gaap:DepreciationAndAmortizationDiscontinuedOperations",
+    "us-gaap:DepreciationExpenseOnReclassifiedAssets",
+    "us-gaap:EmployeeBenefitsAndShareBasedCompensation",
+    "us-gaap:EntertainmentLicenseAgreementForProgramMaterialAmortizationExpense",
+    "us-gaap:FilmMonetizedInFilmGroupAmortizationExpense",
+    "us-gaap:FilmMonetizedOnItsOwnAmortizationExpense",
+    "us-gaap:FilmMonetizedOnItsOwnAndFilmMonetizedInFilmGroupAmortizationExpense",
+    "us-gaap:HealthCareOrganizationContractAcquisitionExpense",
+    "us-gaap:HealthCareOrganizationExpensesNet",
+    "us-gaap:HealthCareOrganizationHealthCareCostsGross",
+    "us-gaap:HealthCareOrganizationStopLossInsurancePremiumExpense",
+    "us-gaap:ImpairmentOfIntangibleAssetsExcludingGoodwill",
+    "us-gaap:IncentiveFeeExpenseCapitalGainBased",
+    "us-gaap:IncentiveFeeExpenseIncomeBased",
+    "us-gaap:IncomeTaxExaminationInterestExpense",
+    "us-gaap:IncomeTaxExaminationPenaltiesAndInterestExpense",
+    "us-gaap:IncomeTaxExaminationPenaltiesExpense",
+    "us-gaap:IncomeTaxExpenseBenefitContinuingOperationsDiscontinuedOperationsExtraordinaryItems",
+    "us-gaap:IncomeTaxExpenseBenefitIntraperiodTaxAllocation",
+    "us-gaap:InterestCreditedToPolicyOwnerAccount",
+    "us-gaap:InterestExpenseDebtExcludingAmortization",
+    "us-gaap:InterestExpenseDomesticDepositLiabilities",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesBrokered",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesCertificatesOfDeposit",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesChecking",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesDemand",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesMoneyMarket",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesNoticeOfWithdrawal",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesOtherTimeDeposit",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesRetail",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesSavings",
+    "us-gaap:InterestExpenseDomesticDepositLiabilitiesTimeDeposit",
+    "us-gaap:InterestExpenseInterestBearingLiability",
+    "us-gaap:InterestExpenseOnPrepetitionLiabilitiesRecognizedInStatementOfOperations",
+    "us-gaap:InvestmentCompanyExciseTaxExpense",
+    "us-gaap:InvestmentIncomeOperatingTaxExpenseBenefit",
+    "us-gaap:LiabilityForFuturePolicyBenefitAdverseDevelopmentExpense",
+    "us-gaap:LitigationSettlementExpense",
+    "us-gaap:ManagementAndIncentiveFeesExpense",
+    "us-gaap:MarketRiskBenefitInterestExpense",
+    "us-gaap:ObligationWithJointAndSeveralLiabilityArrangementCorrespondingEntryExpense",
+    "us-gaap:OrganizationalAndOfferingCostsExpense",
+    "us-gaap:OrganizationalCostExpense",
+    "us-gaap:OtherExpenseFromRealEstatePartnershipOperations",
+    "us-gaap:OtherIncomeTaxExpenseBenefitContinuingOperations",
+    "us-gaap:OtherResearchAndDevelopmentExpense",
+    "us-gaap:ProductLiabilityAccrualPeriodExpense",
+    "us-gaap:ProductionAndDistributionCosts",
+    "us-gaap:RealEstateTaxesAndInsurance",
+    "us-gaap:RepurchaseAgreementsInterestExpenseAmount",
+    "us-gaap:ResultsOfOperationsAccretionOfAssetRetirementObligations",
+    "us-gaap:ResultsOfOperationsDepreciationDepletionAmortizationAndAccretion",
+    "us-gaap:ResultsOfOperationsDepreciationDepletionAndAmortizationAndValuationProvisions",
+    "us-gaap:ResultsOfOperationsDryHoleCosts",
+    "us-gaap:ResultsOfOperationsExpenseFromOilAndGasProducingActivities",
+    "us-gaap:ResultsOfOperationsExpenseOther",
+    "us-gaap:ResultsOfOperationsExplorationExpense",
+    "us-gaap:ResultsOfOperationsGeneralAndAdministrativeRelatedToOilAndGasProducingActivities",
+    "us-gaap:ResultsOfOperationsIncomeTaxExpense",
+    "us-gaap:ResultsOfOperationsProductionOrLiftingCosts",
+    "us-gaap:ResultsOfOperationsTransportationCosts",
+    "us-gaap:SalariesWagesAndOfficersCompensation",
+    "us-gaap:ShareRepurchaseProgramExciseTax",
+    "us-gaap:TaxesAndLicenses",
+    "us-gaap:UnrecognizedTaxBenefitsIncomeTaxPenaltiesAndInterestExpense",
+    "us-gaap:UtilitiesOperatingExpense",
+    "us-gaap:UtilitiesOperatingExpenseDepreciationAndAmortization",
+    "us-gaap:UtilitiesOperatingExpenseFuelUsed",
+    "us-gaap:UtilitiesOperatingExpenseGasAndPetroleumPurchased",
+    "us-gaap:UtilitiesOperatingExpenseImpairments",
+    "us-gaap:UtilitiesOperatingExpenseMaintenance",
+    "us-gaap:UtilitiesOperatingExpenseMaintenanceAndOperations",
+    "us-gaap:UtilitiesOperatingExpenseOperations",
+    "us-gaap:UtilitiesOperatingExpenseOther",
+    "us-gaap:UtilitiesOperatingExpenseProductsAndServices",
+    "us-gaap:UtilitiesOperatingExpensePurchasedPower",
+    "us-gaap:UtilitiesOperatingExpensePurchasedPowerUnderLongTermContracts",
+    "us-gaap:UtilitiesOperatingExpenseTaxes",
+    "us-gaap:PremiumReceivableCreditLossExpenseReversal"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:SaleLeasebackTransactionHistoricalCost": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:SaleLeasebackTransactionAccumulatedDepreciation"
+   ]
+  },
+  "us-gaap:SalesTypeLeaseNetInvestmentInLease": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLoss"
+   ]
+  },
+  "us-gaap:SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLoss": {
+   "inflow": [
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLossRecovery",
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:SalesTypeLeaseNetInvestmentInLeaseBeforeAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLossCurrent"
+   ]
+  },
+  "us-gaap:SalesTypeLeaseNetInvestmentInLeaseBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLossNoncurrent"
+   ]
+  },
+  "us-gaap:SalesTypeLeaseNetInvestmentInLeaseExcludingAccruedInterestBeforeAllowanceForCreditLossCurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLossExcludingAccruedInterestCurrent"
+   ]
+  },
+  "us-gaap:SalesTypeLeaseNetInvestmentInLeaseExcludingAccruedInterestBeforeAllowanceForCreditLossNoncurrent": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [],
+   "contra": [
+    "us-gaap:SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLossExcludingAccruedInterestNoncurrent"
+   ]
+  },
+  "us-gaap:SecuritiesBorrowed": {
+   "inflow": [
+    "us-gaap:SecuritiesBorrowedIncrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:SecuritiesBorrowedAllowanceForCreditLoss": {
+   "inflow": [
+    "us-gaap:SecuritiesBorrowedAllowanceForCreditLossRecovery",
+    "us-gaap:SecuritiesBorrowedAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:SecuritiesBorrowedAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:SecuritiesPurchasedUnderAgreementsToResell": {
+   "inflow": [
+    "us-gaap:SecuritiesPurchasedUnderAgreementsToResellIncrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:SecuritiesPurchasedUnderAgreementsToResellAllowanceForCreditLoss": {
+   "inflow": [
+    "us-gaap:SecuritiesPurchasedUnderAgreementsToResellAllowanceForCreditLossRecovery",
+    "us-gaap:SecuritiesPurchasedUnderAgreementsToResellAllowanceForCreditLossPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:SecuritiesPurchasedUnderAgreementToResellAllowanceForCreditLossWriteoff"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:SeparateAccountsLiability": {
+   "inflow": [
+    "us-gaap:SeparateAccountLiabilityIncreaseDecreaseFromInvestedPerformance",
+    "us-gaap:SeparateAccountLiabilityIncreaseDecreaseFromOtherChange",
+    "us-gaap:TransferToFromPolicyholderAccountBalanceToFromSeparateAccount",
+    "us-gaap:SeparateAccountLiabilityPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:SeparateAccountLiabilityPolicyCharge",
+    "us-gaap:SeparateAccountLiabilitySurrender",
+    "us-gaap:SeparateAccountLiabilityWithdrawal",
+    "us-gaap:SeparateAccountLiabilitySurrenderAndWithdrawal"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ServicingAssetAtAmortizedValue": {
+   "inflow": [
+    "us-gaap:ServicingAssetAtAmortizedValueAdditions",
+    "us-gaap:ServicingAssetAtAmortizedValueValuationAllowance",
+    "us-gaap:ServicingAssetAtAmortizedValueOtherChangesThatAffectBalanceAmount",
+    "us-gaap:ServicingAssetAtAmortizedValuePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ServicingAssetAtAmortizedValueDisposals"
+   ],
+   "accrual": [
+    "us-gaap:ServicingAssetAtAmortizedValueAmortization1",
+    "us-gaap:AmortizationOfMortgageServicingRightsMSRs"
+   ],
+   "contra": []
+  },
+  "us-gaap:ServicingAssetAtFairValueAmount": {
+   "inflow": [
+    "us-gaap:ServicingAssetAtFairValueAdditions",
+    "us-gaap:ServicingAssetAtFairValueChangesInFairValueResultingFromChangesInValuationInputsOrChangesInAssumptions",
+    "us-gaap:ServicingAssetAtFairValueChangesInFairValueResultingFromChangesInValuationInputs",
+    "us-gaap:AssetAtFairValueChangesInFairValueResultingFromChangesInAssumptions",
+    "us-gaap:ServicingAssetAtFairValueOtherChangesInFairValue",
+    "us-gaap:ServicingAssetAtFairValueOtherChangesThatAffectBalance",
+    "us-gaap:ServicingAssetAtFairValuePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ServicingAssetAtFairValueDisposals"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ServicingLiabilityAtAmortizedValueBalance": {
+   "inflow": [
+    "us-gaap:ServicingLiabilityAtAmortizedValueAdditions",
+    "us-gaap:ServicingLiabilityAtAmortizedCostOtherIncreaseDecreaseInObligation",
+    "us-gaap:ServicingLiabilityAtAmortizedValuePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ServicingLiabilityAtAmortizedValueDisposals"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ServicingLiabilityAtFairValueAmount": {
+   "inflow": [
+    "us-gaap:ServicingLiabilityAtFairValueAdditions",
+    "us-gaap:ServicingLiabilityAtFairValueChangesInFairValueResultingFromChangesInValuationInputsOrChangesInAssumptions",
+    "us-gaap:ServicingLiabilityAtFairValueOtherChangesInFairValue",
+    "us-gaap:ServicingLiabilityAtFairValueOtherChangesThatAffectBalance",
+    "us-gaap:ServicingLiabilityAtFairValuePeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ServicingLiabilityAtFairValueDisposals"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsOutstandingNumber": {
+   "inflow": [
+    "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingNumber": {
+   "inflow": [
+    "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingPeriodIncreaseDecrease"
+   ],
+   "outflow": [],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:StandardProductWarrantyAccrual": {
+   "inflow": [
+    "us-gaap:StandardProductWarrantyAccrualWarrantiesIssued",
+    "us-gaap:StandardProductWarrantyAccrualPreexistingIncreaseDecrease",
+    "us-gaap:StandardProductWarrantyAccrualAdditionsFromBusinessAcquisition",
+    "us-gaap:StandardProductWarrantyAccrualPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:StandardProductWarrantyAccrualPayments"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:StockholdersEquity": {
+   "inflow": [
+    "us-gaap:ReclassificationsOfTemporaryToPermanentEquity",
+    "us-gaap:StockIssuedDuringPeriodValueNewIssues",
+    "us-gaap:StockIssuedDuringPeriodValueDividendReinvestmentPlan",
+    "us-gaap:InvestmentCompanyIncreaseDecreaseFromShareTransaction",
+    "us-gaap:InvestmentCompanyGeneralPartnerAdvisoryServiceAllocation"
+   ],
+   "outflow": [
+    "us-gaap:StockRepurchasedDuringPeriodValue"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest": {
+   "inflow": [
+    "us-gaap:OtherComprehensiveIncomeLossBeforeReclassificationsNetOfTax",
+    "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+    "us-gaap:StockholdersEquityPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ReclassificationFromAccumulatedOtherComprehensiveIncomeCurrentPeriodNetOfTax"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:SubordinatedDebt": {
+   "inflow": [
+    "us-gaap:SubordinatedLiabilitiesAdditions"
+   ],
+   "outflow": [
+    "us-gaap:SubordinatedLiabilitiesExtinguished"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:SupplierFinanceProgramObligation": {
+   "inflow": [
+    "us-gaap:SupplierFinanceProgramObligationIncrease",
+    "us-gaap:SupplierFinanceProgramObligationPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:SupplierFinanceProgramObligationDecreaseSettlement"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:TemporaryEquityCarryingAmountIncludingPortionAttributableToNoncontrollingInterests": {
+   "inflow": [
+    "us-gaap:TemporaryEquityStockIssuedDuringPeriodValueNewIssues",
+    "us-gaap:TemporaryEquityAccretionOfDividends",
+    "us-gaap:TemporaryEquityAccretionToRedemptionValue",
+    "us-gaap:TemporaryEquityNetIncome",
+    "us-gaap:TemporaryEquityForeignCurrencyTranslationAdjustments",
+    "us-gaap:TemporaryEquityInterestInSubsidiaryEarnings",
+    "us-gaap:TemporaryEquityOtherChanges",
+    "us-gaap:TemporaryEquityIssuePeriodIncreaseOrDecrease"
+   ],
+   "outflow": [
+    "us-gaap:TemporaryEquityEliminationAsPartofReorganization"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:TimeSharingTransactionsAllowanceForUncollectibleAccounts": {
+   "inflow": [
+    "us-gaap:TimeSharingTransactionsAllowanceForUncollectibleAccountsAdditionsForCurrentPeriodSales",
+    "us-gaap:TimeSharingTransactionsChangesInEstimateAssociatedWithPriorPeriodSales",
+    "us-gaap:TimeSharingTransactionsPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:TimeSharingTransactionsDirectWriteOffsChargedAgainstAllowance"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:TradeReceivablesHeldForSaleNetNotPartOfDisposalGroup": {
+   "inflow": [
+    "us-gaap:TradeReceivablesHeldForSaleReconciliationToCashFlowAdditionsToHeldForSale",
+    "us-gaap:TradeReceivablesHeldForSaleReconciliationToCashFlowPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:TradeReceivablesHeldForSaleReconciliationToCashFlowDeductionsFromHeldForSale"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:TradingSecuritiesDebt": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:DebtSecuritiesTradingUnrealizedGainLoss"
+   ],
+   "contra": []
+  },
+  "us-gaap:TranslationAdjustmentForNetInvestmentHedgeNetOfTax": {
+   "inflow": [
+    "us-gaap:TranslationAdjustmentForNetInvestmentHedgeIncreaseDecreaseGrossOfTax",
+    "us-gaap:TranslationAdjustmentForNetInvestmentHedgeNetOfTaxPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:DerivativesUsedInNetInvestmentHedgeTaxExpenseBenefit",
+    "us-gaap:DerivativesUsedInNetInvestmentHedgeGainLossReclassifiedToEarningsNetOfTax"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:TranslationAdjustmentFunctionalToReportingCurrencyNetOfTax": {
+   "inflow": [
+    "us-gaap:TranslationAdjustmentFunctionalToReportingCurrencyIncreaseDecreaseGrossOfTax",
+    "us-gaap:TranslationAdjustmentFunctionalToReportingCurrencyNetOfTaxPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:TranslationAdjustmentFunctionalToReportingCurrencyTaxExpenseBenefit",
+    "us-gaap:TranslationAdjustmentFunctionalToReportingCurrencyGainLossReclassifiedToEarningsNetOfTax"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:UnrecognizedTaxBenefits": {
+   "inflow": [
+    "us-gaap:UnrecognizedTaxBenefitsIncreasesResultingFromPriorPeriodTaxPositions",
+    "us-gaap:UnrecognizedTaxBenefitsIncreasesResultingFromCurrentPeriodTaxPositions",
+    "us-gaap:UnrecognizedTaxBenefitsIncreasesResultingFromSettlementsWithTaxingAuthorities",
+    "us-gaap:UnrecognizedTaxBenefitsIncreasesResultingFromForeignCurrencyTranslation",
+    "us-gaap:UnrecognizedTaxBenefitsIncreasesResultingFromAcquisition",
+    "us-gaap:UnrecognizedTaxBenefitsPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:UnrecognizedTaxBenefitsDecreasesResultingFromPriorPeriodTaxPositions",
+    "us-gaap:UnrecognizedTaxBenefitsDecreasesResultingFromCurrentPeriodTaxPositions",
+    "us-gaap:UnrecognizedTaxBenefitsDecreasesResultingFromSettlementsWithTaxingAuthorities",
+    "us-gaap:UnrecognizedTaxBenefitsReductionsResultingFromLapseOfApplicableStatuteOfLimitations",
+    "us-gaap:UnrecognizedTaxBenefitsDecreasesResultingFromForeignCurrencyTranslation",
+    "us-gaap:UnrecognizedTaxBenefitsDecreasesResultingFromAcquisition"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ValuationAllowanceForImpairmentOfRecognizedServicingAssetsBalance": {
+   "inflow": [
+    "us-gaap:ValuationAllowanceForImpairmentOfRecognizedServicingAssetsProvisionsRecoveries",
+    "us-gaap:ValuationAllowanceForImpairmentOfRecognizedServicingAssetsProvisions",
+    "us-gaap:ValuationAllowanceForImpairmentOfRecognizedServicingAssetsPeriodIncreaseDecrease",
+    "us-gaap:ValuationAllowancesAndReservesPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:ValuationAllowanceForImpairmentOfRecognizedServicingAssetsRecoveries",
+    "us-gaap:ValuationAllowanceForImpairmentOfRecognizedServicingAssetsAggregateWriteDowns",
+    "us-gaap:ValuationAllowanceForImpairmentOfRecognizedServicingAssetsSalesAndDisposals",
+    "us-gaap:ValuationAllowanceForImpairmentOfRecognizedServicingAssetsSales",
+    "us-gaap:ValuationAllowanceForImpairmentOfRecognizedServicingAssetsDisposals"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ValuationAllowancesAndReservesBalance": {
+   "inflow": [
+    "us-gaap:ValuationAllowancesAndReservesChargedToCostAndExpense",
+    "us-gaap:ValuationAllowancesAndReservesChargedToOtherAccounts",
+    "us-gaap:ValuationAllowancesAndReservesRecoveries",
+    "us-gaap:ValuationAllowancesAndReservesReservesOfBusinessesAcquired"
+   ],
+   "outflow": [
+    "us-gaap:ValuationAllowancesAndReservesDeductions"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:ValueOfBusinessAcquiredVOBA": {
+   "inflow": [
+    "us-gaap:PresentValueOfFutureInsuranceProfitsAdditionsFromAcquisitions",
+    "us-gaap:PresentValueOfFutureInsuranceProfitsPeriodIncreaseDecrease"
+   ],
+   "outflow": [
+    "us-gaap:PresentValueOfFutureInsuranceProfitsDisposition"
+   ],
+   "accrual": [],
+   "contra": []
+  },
+  "us-gaap:WarrantsAndRightsOutstanding": {
+   "inflow": [],
+   "outflow": [],
+   "accrual": [
+    "us-gaap:AdjustmentOfWarrantsGrantedForServices",
+    "us-gaap:FairValueAdjustmentOfWarrants"
+   ],
+   "contra": []
+  }
+ }
+}
